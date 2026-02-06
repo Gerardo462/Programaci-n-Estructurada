@@ -8,6 +8,48 @@
         { "id": "condicionales", "label": "Condicionales", "mdPath": "01_basico/condicionales/condicionales.md" },
         { "id": "ciclos", "label": "Ciclos", "mdPath": "01_basico/ciclos/ciclos.md" }
       ]
+    },
+    {
+      "title": "Intermedio",
+      "items": [
+        { "id": "funciones", "label": "Funciones", "mdPath": "02_intermedio/funciones/funciones.md" },
+        { "id": "arreglos", "label": "Arreglos", "mdPath": "02_intermedio/arreglos/arreglos.md" }
+      ]
+    },
+    {
+      "title": "Ejercicios",
+      "items": [
+        { "id": "ej_basico", "label": "Ejercicios – Básico", "mdPath": "03_ejercicios/basico/ejercicios_basico.md" },
+        { "id": "ej_intermedio", "label": "Ejercicios – Intermedio", "mdPath": "03_ejercicios/intermedio/ejercicios_intermedio.md" }
+      ]
+    },
+    {
+      "title": "Soluciones en Python",
+      "items": [
+        { "id": "sol_basico", "label": "Soluciones Básico (.py)", "mdPath": "03_ejercicios/basico/soluciones_basico.py" },
+        { "id": "sol_intermedio", "label": "Soluciones Intermedio (.py)", "mdPath": "03_ejercicios/intermedio/soluciones_intermedio.py" }
+      ]
+    },
+    {
+      "title": "Pseudocódigo",
+      "items": [
+        { "id": "ps_variables", "label": "Variables", "mdPath": "04_pseudocodigo/variables_pseudocodigo.md" },
+        { "id": "ps_condicionales", "label": "Condicionales", "mdPath": "04_pseudocodigo/condicionales_pseudocodigo.md" },
+        { "id": "ps_ciclos", "label": "Ciclos", "mdPath": "04_pseudocodigo/ciclos_pseudocodigo.md" }
+      ]
+    },
+    {
+      "title": "Diagramas de flujo",
+      "items": [
+        { "id": "diagramas", "label": "Diagramas", "mdPath": "05_diagramas_flujo/README.md" }
+      ]
+    },
+    {
+      "title": "Recursos",
+      "items": [
+        { "id": "instalacion", "label": "Guía de instalación", "mdPath": "recursos/guia_instalacion.md" },
+        { "id": "referencias", "label": "Referencias", "mdPath": "recursos/referencias.md" }
+      ]
     }
   ]
 }
