@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Repositorio – Programación Estructurada</title>
+ <link rel="stylesheet" href="./estilos.css?v=2" />
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo">Programacion Estructurada</div>
+      <div>
+        <h1>Repositorio educativo</h1>
+        <p>Programación estructurada</p>
+      </div>
+    </div>
+    <div class="actions">
+      <input id="search" class="search" type="search" placeholder="Buscar tema..." />
+      <a class="btn" id="btnRepo" href="#" target="_blank">Ver en GitHub</a>
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <h2>Temas</h2>
+      <nav id="nav"></nav>
+    </aside>
+    <main class="main">
+      <h2 id="title">Bienvenido</h2>
+      <article id="viewer">Selecciona un tema del menú</article>
+      <a id="sourceLink" target="_blank"></a>
+    </main>
+  </div>
+
+<script src="./app.js"></script>
+
+
+</body>
+</html>
