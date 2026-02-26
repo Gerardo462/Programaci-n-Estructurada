@@ -1,5 +1,20 @@
 {
   "repoUrl": "https://github.com/Gerardo462/Programaci-n-Estructurada",
+  {
+  "title": "Inicio",
+  "items": [
+    { 
+      "id": "bienvenida", 
+      "label": "Bienvenida", 
+      "mdPath": "extras/bienvenida.md" 
+    },
+    { 
+      "id": "creditos", 
+      "label": "Créditos", 
+      "mdPath": "extras/creditos.md" 
+    }
+  ]
+},
   "sections": [
     {
       "title": "Básico",
