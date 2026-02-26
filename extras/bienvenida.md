@@ -1,6 +1,4 @@
-# Bienvenida
-
-Bienvenido al repositorio educativo de **Programación Estructurada**.
+## Repositorio educativo como herramienta de apoyo para la enseñanza de la programación estructurada
 
 Este proyecto fue desarrollado para apoyar el aprendizaje de los fundamentos de programación utilizando una estructura organizada por niveles.
 
