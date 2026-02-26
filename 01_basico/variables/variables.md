@@ -1,4 +1,4 @@
-📘 Variables
+
 1. ¿Qué es una variable?
 
 Una variable es un espacio en la memoria de la computadora que se utiliza para almacenar información.
