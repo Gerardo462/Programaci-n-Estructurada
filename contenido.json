@@ -1,21 +1,15 @@
 {
   "repoUrl": "https://github.com/Gerardo462/Programaci-n-Estructurada",
-  {
-  "title": "Inicio",
-  "items": [
-    { 
-      "id": "bienvenida", 
-      "label": "Bienvenida", 
-      "mdPath": "extras/bienvenida.md" 
-    },
-    { 
-      "id": "creditos", 
-      "label": "Créditos", 
-      "mdPath": "extras/creditos.md" 
-    }
-  ]
-},
   "sections": [
+
+    {
+      "title": "Inicio",
+      "items": [
+        { "id": "bienvenida", "label": "Bienvenida", "mdPath": "extras/bienvenida.md" },
+        { "id": "creditos", "label": "Créditos", "mdPath": "extras/creditos.md" }
+      ]
+    },
+
     {
       "title": "Básico",
       "items": [
@@ -24,6 +18,7 @@
         { "id": "ciclos", "label": "Ciclos", "mdPath": "01_basico/ciclos/ciclos.md" }
       ]
     },
+
     {
       "title": "Intermedio",
       "items": [
@@ -31,6 +26,7 @@
         { "id": "arreglos", "label": "Arreglos", "mdPath": "02_intermedio/arreglos/arreglos.md" }
       ]
     },
+
     {
       "title": "Ejercicios",
       "items": [
@@ -38,6 +34,7 @@
         { "id": "ej_intermedio", "label": "Ejercicios – Intermedio", "mdPath": "03_ejercicios/intermedio/ejercicios_intermedio.md" }
       ]
     },
+
     {
       "title": "Soluciones en Python",
       "items": [
@@ -45,6 +42,7 @@
         { "id": "sol_intermedio", "label": "Soluciones Intermedio (.py)", "mdPath": "03_ejercicios/intermedio/soluciones_intermedio.py" }
       ]
     },
+
     {
       "title": "Pseudocódigo",
       "items": [
@@ -53,12 +51,14 @@
         { "id": "ps_ciclos", "label": "Ciclos", "mdPath": "04_pseudocodigo/ciclos_pseudocodigo.md" }
       ]
     },
+
     {
       "title": "Diagramas de flujo",
       "items": [
         { "id": "diagramas", "label": "Diagramas", "mdPath": "05_diagramas_flujo/README.md" }
       ]
     },
+
     {
       "title": "Recursos",
       "items": [
@@ -66,5 +66,6 @@
         { "id": "referencias", "label": "Referencias", "mdPath": "recursos/referencias.md" }
       ]
     }
+
   ]
 }
