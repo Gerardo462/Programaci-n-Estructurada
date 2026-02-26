@@ -1,13 +1,11 @@
-# Créditos
 
-## Universidad Autónoma Metropolitana  
-### Unidad Cuajimalpa
+## Universidad Autónoma Metropolitana - Unidad Cuajimalpa
 
 ---
 
 ## 📘 Proyecto Académico
 
-Este repositorio fue desarrollado como parte del curso de **Programación Estructurada**, con el propósito de integrar conocimientos teóricos y prácticos en una plataforma organizada y accesible.
+Este repositorio fue desarrollado como parte de el proyecto terminal del alumno Gerardo Jimenez Espinosa. Con el propósito de integrar conocimientos teóricos y prácticos en una plataforma organizada y accesible.
 
 ---
 
@@ -18,19 +16,10 @@ Alumno de la Universidad Autónoma Metropolitana – Unidad Cuajimalpa
 
 ---
 
-## 👨‍🏫 Profesor
+## 👨‍🏫 Asesores
 
-(Nombre del profesor)  
+**Tiburcio Moreno Olivos y Lizbeth Noguez Moreno**  
 Departamento de Tecnologías de la Información
-
----
-
-## 📅 Información académica
-
-- Trimestre: (Trimestre actual)
-- Año: 2026
-- Modalidad: Proyecto académico
-- Unidad de aprendizaje: Programación Estructurada
 
 ---
 
