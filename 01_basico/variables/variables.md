@@ -125,6 +125,7 @@ int() convierte texto a número entero
 Ejemplo recomendado:
 
 precio_producto = 150
+
 9. Ejercicio propuesto
 
 Crea un programa que:
