@@ -1,4 +1,3 @@
-# Créditos
 
 **Universidad Autónoma Metropolitana – Unidad Cuajimalpa**
 
