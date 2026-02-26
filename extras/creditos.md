@@ -2,14 +2,12 @@
 
 **Universidad Autónoma Metropolitana – Unidad Cuajimalpa**
 
-Proyecto académico de Programación Estructurada.
+Repositorio educativo como herramienta de apoyo para la enseñanza de la programación estructurada
 
 Alumno: Gerardo Jiménez Espinosa  
-Profesor: (Nombre del profesor)  
-Trimestre: (Trimestre actual)  
+Asesores: Tiburcio Moreno Olivos y Lizbeth Noguez Moreno
 Año: 2026
 
----
 
 ## Tecnologías utilizadas
 
