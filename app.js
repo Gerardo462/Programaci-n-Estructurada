@@ -132,22 +132,71 @@ else:
 },
 
   ciclos_1: {
-    titulo: "Ejercicio 1",
-    introduccion: "Observa el siguiente ciclo:",
-    codigo: `i = 1
+  titulo: "Ejercicio 1",
+  introduccion: "Observa el siguiente ciclo:",
+  codigo: `i = 1
 
 while i <= 3:
     print(i)
     i = i + 1`,
-    pregunta: "¿Cuántas veces se repite el ciclo?",
-    placeholder: "Escribe un número",
-    respuestaCorrecta: "3",
-    pistas: [
-      "Cuenta los valores 1, 2 y 3.",
-      "El ciclo se repite una vez por cada valor válido."
-    ],
-    felicitacion: "🎉 ¡Felicidades! Ya entendiste cómo funciona un ciclo."
-  },
+  pregunta: "¿Cuántas veces se ejecuta el ciclo?",
+  placeholder: "Escribe un número",
+  respuestaCorrecta: "3",
+  pistas: [
+    "El ciclo empieza en 1.",
+    "Se repite mientras i sea menor o igual a 3."
+  ],
+  felicitacion: "🎉 ¡Correcto! El ciclo se repite 3 veces."
+},
+
+ciclos_2: {
+  titulo: "Ejercicio 2",
+  introduccion: "Observa el siguiente código:",
+  codigo: `contador = 0
+
+while contador < 5:
+    contador = contador + 1`,
+  pregunta: "¿Qué valor tendrá contador al final?",
+  placeholder: "Escribe tu respuesta",
+  respuestaCorrecta: "5",
+  pistas: [
+    "El contador empieza en 0.",
+    "Se incrementa hasta que llegue a 5."
+  ],
+  felicitacion: "🎉 ¡Muy bien! El valor final es 5."
+},
+
+ciclos_3: {
+  titulo: "Ejercicio 3",
+  introduccion: "Observa el siguiente ciclo:",
+  codigo: `for i in range(3):
+    print(i)`,
+  pregunta: "¿Cuántos números se mostrarán?",
+  placeholder: "Escribe un número",
+  respuestaCorrecta: "3",
+  pistas: [
+    "range(3) genera tres valores.",
+    "Los valores son 0, 1 y 2."
+  ],
+  felicitacion: "🎉 ¡Excelente! El ciclo imprime 3 números."
+},
+
+ciclos_4: {
+  titulo: "Ejercicio 4",
+  introduccion: "Observa el siguiente código:",
+  codigo: `suma = 0
+
+for i in range(3):
+    suma = suma + 2`,
+  pregunta: "¿Cuál será el valor final de suma?",
+  placeholder: "Escribe tu respuesta",
+  respuestaCorrecta: "6",
+  pistas: [
+    "Se suma 2 tres veces.",
+    "2 + 2 + 2 = 6."
+  ],
+  felicitacion: "🎉 ¡Felicidades! Has entendido cómo funcionan los ciclos."
+},
 
   arreglos_1: {
     titulo: "Ejercicio 1",
