@@ -261,7 +261,7 @@ valor = triplicar(5)`,
     "5 × 3 = ?"
   ],
   felicitacion: "🎉 ¡Felicidades! Has entendido cómo usar funciones."
-}
+
 },
  
 const exerciseAttempts = {};
