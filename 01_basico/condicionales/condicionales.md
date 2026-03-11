@@ -82,8 +82,6 @@ Estas expresiones solo pueden dar dos resultados:
 
 ---
 
----
-
 [[EJERCICIO:condicionales_1]]
 
 ---
@@ -167,8 +165,6 @@ Como `9` es mayor que `6`, el resultado será:
 ```
 Aprobado
 ```
-
----
 
 [[EJERCICIO:condicionales_4]]
 
