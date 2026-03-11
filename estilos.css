@@ -259,3 +259,46 @@ body{
   .sidebar{ height:auto; max-height: 380px; }
   .search{ width:min(320px, 46vw); }
 }
+
+---
+
+## También necesitas esto en `estilos.css`
+
+Para que se vea bonito, pega esto:
+
+```css
+.exercise-box {
+  background: #f7f9fc;
+  border: 1px solid #d9e2f1;
+  border-radius: 12px;
+  padding: 16px;
+  margin: 18px 0;
+}
+
+.exercise-input {
+  width: 100%;
+  max-width: 320px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #c7cfdb;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.exercise-btn {
+  background: #2d6cdf;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 14px;
+  cursor: pointer;
+}
+
+.exercise-btn:hover {
+  opacity: 0.95;
+}
+
+.exercise-message {
+  margin-top: 12px;
+  font-weight: 500;
+}
