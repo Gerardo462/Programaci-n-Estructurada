@@ -32,7 +32,7 @@ Casi todos los programas usan variables para trabajar con datos.
 
 Observa el siguiente ejemplo:
 
-```python
+
 a = 5
 b = 3
 suma = a + b
