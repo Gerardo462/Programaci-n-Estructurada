@@ -41,6 +41,8 @@ suma = a + b`,
     ],
     felicitacion: "🎉 ¡Felicidades! Ya entendiste cómo usar variables."
   },
+
+ 
   variables_3: {
   titulo: "Ejercicio",
   introduccion: "Observa el siguiente código:",
