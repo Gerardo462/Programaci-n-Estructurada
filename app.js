@@ -280,6 +280,8 @@ valor = sumar(4, 3)`,
   ],
   felicitacion: "🎉 ¡Felicidades! Has entendido cómo funcionan las funciones."
 },
+
+  
 const exerciseAttempts = {};
 
 if (window.marked) {
