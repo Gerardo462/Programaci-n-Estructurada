@@ -10,21 +10,21 @@ let BRANCH = BRANCH_CANDIDATES[0];
 let DATA = null;
 
 const EXERCISES = {
-  variables_1: {
-    titulo: "Ejercicio",
-    introduccion: "Observa el siguiente código:",
-    codigo: `x = 4
-y = 6
-resultado = x + y`,
-    pregunta: "¿Cuál será el valor de la variable resultado?",
-    placeholder: "Escribe tu respuesta",
-    respuestaCorrecta: "10",
-    pistas: [
-      "Suma los valores de x y de y.",
-      "Recuerda que x vale 4 y y vale 6."
-    ],
-    felicitacion: "🎉 ¡Felicidades! Tu respuesta es correcta."
-  },
+ variables_1: {
+  titulo: "Ejercicio",
+  introduccion: "Observa el siguiente código:",
+  codigo: `a = 5
+b = 3
+suma = a + b`,
+  pregunta: "¿Cuál será el valor de la variable suma?",
+  placeholder: "Escribe tu respuesta",
+  respuestaCorrecta: "8",
+  pistas: [
+    "Debes sumar 5 + 3.",
+    "El resultado es mayor que 7."
+  ],
+  felicitacion: "🎉 ¡Felicidades! Tu respuesta es correcta."
+},,
 
   variables_2: {
     titulo: "Ejercicio",
@@ -41,6 +41,21 @@ suma = a + b`,
     ],
     felicitacion: "🎉 ¡Felicidades! Ya entendiste cómo usar variables."
   },
+  variables_3: {
+  titulo: "Ejercicio",
+  introduccion: "Observa el siguiente código:",
+  codigo: `x = 2
+y = 4
+resultado = x * y`,
+  pregunta: "¿Cuál será el valor de la variable resultado?",
+  placeholder: "Escribe tu respuesta",
+  respuestaCorrecta: "8",
+  pistas: [
+    "Debes multiplicar 2 por 4.",
+    "El resultado es mayor que 7."
+  ],
+  felicitacion: "🎉 ¡Excelente! Has entendido cómo usar variables."
+},
 
   condicionales_1: {
     titulo: "Ejercicio",
