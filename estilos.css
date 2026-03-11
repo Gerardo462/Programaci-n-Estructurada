@@ -425,4 +425,9 @@ body{
     width:100%;
     max-width:360px;
   }
+  .exercise-card{
+  background:red !important;
+  color:white !important;
+  padding:40px !important;
+}
 }
