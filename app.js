@@ -155,7 +155,7 @@ function normalizeText(text) {
 }
 
 function renderExercises(html) {
-  return html.replace(/\[\[EJERCICIO:([a-zA-Z0-9_-]+)\]\]/g, (_, exerciseId) => {
+  return html.replace(/<p>\s*\[\[EJERCICIO:([a-zA-Z0-9_-]+)\]\]\s*<\/p>/gi, function (_, exerciseId) {
     const ex = EXERCISES[exerciseId];
 
     if (!ex) {
@@ -167,24 +167,10 @@ function renderExercises(html) {
         <div class="exercise-card-header">
           <h3>Ejercicio</h3>
         </div>
-
         <div class="exercise-card-body">
           <p class="exercise-question">${escapeHtml(ex.pregunta)}</p>
-
-          <input
-            type="text"
-            class="exercise-input"
-            placeholder="${escapeHtml(ex.placeholder)}"
-          >
-
-          <button
-            class="exercise-btn"
-            data-exercise-id="${escapeHtml(exerciseId)}"
-            type="button"
-          >
-            Enviar respuesta
-          </button>
-
+          <input type="text" class="exercise-input" placeholder="${escapeHtml(ex.placeholder)}">
+          <button class="exercise-btn" data-exercise-id="${escapeHtml(exerciseId)}" type="button">Enviar respuesta</button>
           <p class="exercise-message"></p>
         </div>
       </div>
