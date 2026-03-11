@@ -53,9 +53,36 @@ Como la condición sí se cumple, el programa muestra:
 Puede entrar
 ```
 
+## Comparaciones comunes
+
+Las condicionales usan operadores de comparación.
+
+Algunos de los más usados son:
+
+- `>` mayor que
+- `<` menor que
+- `>=` mayor o igual que
+- `<=` menor o igual que
+- `==` igual a
+- `!=` diferente de
+
+Ejemplos:
+
+```python
+x > 5
+edad >= 18
+numero == 10
+clave != 1234
+```
+
+Estas expresiones solo pueden dar dos resultados:
+
+- **verdadero**
+- **falso**
+
 ---
 
-## Ejercicio 1
+---
 
 [[EJERCICIO:condicionales_1]]
 
@@ -102,42 +129,9 @@ Es positivo
 
 ---
 
-## Ejercicio 2
-
 [[EJERCICIO:condicionales_2]]
 
 ---
-
-## Comparaciones comunes
-
-Las condicionales usan operadores de comparación.
-
-Algunos de los más usados son:
-
-- `>` mayor que
-- `<` menor que
-- `>=` mayor o igual que
-- `<=` menor o igual que
-- `==` igual a
-- `!=` diferente de
-
-Ejemplos:
-
-```python
-x > 5
-edad >= 18
-numero == 10
-clave != 1234
-```
-
-Estas expresiones solo pueden dar dos resultados:
-
-- **verdadero**
-- **falso**
-
----
-
-## Ejercicio 3
 
 [[EJERCICIO:condicionales_3]]
 
@@ -175,8 +169,6 @@ Aprobado
 ```
 
 ---
-
-## Ejercicio 4
 
 [[EJERCICIO:condicionales_4]]
 
