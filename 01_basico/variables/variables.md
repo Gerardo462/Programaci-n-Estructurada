@@ -1,186 +1,98 @@
-# 📘 Variables
 
-## 1️⃣ ¿Qué es una variable?
+## ¿Qué es una variable?
 
-Una **variable** es un espacio en la memoria de la computadora que se utiliza para almacenar información.  
-Su valor puede cambiar durante la ejecución del programa.
+Una **variable** es un espacio donde un programa guarda información para poder usarla después.
 
-Podemos imaginar una variable como una **caja con etiqueta**:
+Podemos imaginar una variable como una **caja con un nombre** donde guardamos un valor.
 
-- 📌 La etiqueta es el **nombre de la variable**
-- 📦 Dentro de la caja está el **valor**
+Por ejemplo, si guardamos el número 10 en una variable llamada `x`, estamos diciendo:
+x = 10
 
-Ejemplo:
 
-```python
-edad = 20
-```
-
-Aquí:
-
-- `edad` es el nombre de la variable  
-- `20` es el valor almacenado  
+Ahora el programa puede usar `x` más adelante.
 
 ---
 
-## 2️⃣ Reglas para nombrar variables
+## Ejemplo sencillo
 
-En Python, los nombres de variables:
 
-✔ Deben comenzar con una letra o guion bajo  
-✔ Pueden contener letras y números  
-❌ No pueden comenzar con número  
-❌ No pueden tener espacios  
-
-Ejemplos válidos:
-
-```python
-nombre = "Ana"
-edad2 = 25
-_total = 100
-```
-
-Ejemplos incorrectos:
-
-```python
-2edad = 20      # ❌ Empieza con número
-mi edad = 30    # ❌ Tiene espacio
-```
-
----
-
-## 3️⃣ Tipos de datos básicos
-
-Las variables pueden almacenar diferentes tipos de datos.
-
-| Tipo | Ejemplo | Descripción |
-|------|---------|------------|
-| `int` | 10 | Número entero (sin decimales) |
-| `float` | 3.14 | Número decimal |
-| `str` | "Hola" | Texto |
-| `bool` | True | Verdadero o falso |
-
-Ejemplos:
-
-```python
-edad = 20          # int
-altura = 1.75      # float
-nombre = "Luis"    # str
-es_mayor = True    # bool
-```
-
----
-
-## 4️⃣ Asignación de valores
-
-Asignar significa guardar un valor en una variable usando el símbolo `=`.
-
-```python
-numero = 10
-```
-
-⚠ El símbolo `=` no significa "igual", significa **asignar un valor**.
-
----
-
-## 5️⃣ Modificar el valor de una variable
-
-El valor puede cambiar durante el programa.
-
-```python
-puntos = 10
-puntos = 20
-```
-
-Ahora `puntos` vale 20.
-
-También podemos actualizar usando el valor anterior:
-
-```python
-contador = 5
-contador = contador + 1
-```
-
-Resultado:
-
-```
-contador = 6
-```
-
----
-
-## 6️⃣ Uso de variables en operaciones
-
-Las variables pueden utilizarse en operaciones matemáticas:
-
-```python
-a = 10
-b = 5
+a = 5
+b = 3
 suma = a + b
-print(suma)
-```
 
-Resultado:
 
-```
-15
-```
+En este ejemplo:
 
----
-
-## 7️⃣ Entrada de datos con variables
-
-Las variables también pueden almacenar información ingresada por el usuario:
-
-```python
-nombre = input("Escribe tu nombre: ")
-edad = int(input("Escribe tu edad: "))
-
-print("Hola", nombre)
-print("Tienes", edad, "años")
-```
-
-🔎 Aquí:
-
-- `input()` recibe texto
-- `int()` convierte texto en número entero
+- `a` guarda el valor **5**
+- `b` guarda el valor **3**
+- `suma` guarda el resultado de **5 + 3**
 
 ---
 
-## 8️⃣ Buenas prácticas
+## ¿Para qué sirven las variables?
 
-✔ Usar nombres descriptivos  
-✔ Mantener coherencia en el idioma  
-✔ Evitar nombres muy cortos como `x` o `a`  
+Las variables permiten:
 
-Ejemplo recomendado:
-
-```python
-precio_producto = 150
-```
+- guardar información
+- hacer cálculos
+- usar resultados después
+- controlar el comportamiento del programa
 
 ---
 
-## 9️⃣ Ejercicio propuesto
+# Ejercicio
 
-Crea un programa que:
+Supongamos que tenemos el siguiente código:
 
-1. Pida el nombre de un alumno.
-2. Pida su edad.
-3. Pida su carrera.
-4. Muestre un mensaje con toda la información.
 
-Ejemplo de salida esperada:
+x = 4
+y = 6
+resultado = x + y
 
-```
-Hola Ana, tienes 20 años y estudias Ingeniería.
-```
 
----
+**Pregunta:**
 
-## 🔟 Conclusión
+¿Cuál será el valor de la variable `resultado`?
 
-Las variables son uno de los conceptos fundamentales en programación.  
-Permiten almacenar información, realizar cálculos y controlar el flujo de un programa.
+<input id="respuestaVariables" placeholder="Escribe tu respuesta aquí">
 
-Sin variables no sería posible desarrollar aplicaciones dinámicas.
+<button onclick="verificarVariables()">Enviar respuesta</button>
+
+<p id="mensajeVariables"></p>
+
+<script>
+
+let intentosVariables = 0;
+
+function verificarVariables(){
+
+const respuesta = document.getElementById("respuestaVariables").value.trim();
+const mensaje = document.getElementById("mensajeVariables");
+
+if(respuesta == "10"){
+
+mensaje.innerHTML = "🎉 ¡Felicidades! Tu respuesta es correcta.";
+
+}else{
+
+intentosVariables++;
+
+if(intentosVariables == 1){
+
+mensaje.innerHTML = "❌ No es correcto. Pista: suma los valores de x y y.";
+
+}else if(intentosVariables == 2){
+
+mensaje.innerHTML = "❌ Intenta nuevamente. Recuerda que x vale 4 y y vale 6.";
+
+}else{
+
+mensaje.innerHTML = "La respuesta correcta es **10** porque 4 + 6 = 10.";
+
+}
+
+}
+
+}
+
+</script>
