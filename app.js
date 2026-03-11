@@ -10,24 +10,8 @@ let BRANCH = BRANCH_CANDIDATES[0];
 let DATA = null;
 
 const EXERCISES = {
- variables_1: {
-  titulo: "Ejercicio",
-  introduccion: "Observa el siguiente código:",
-  codigo: `a = 5
-b = 3
-suma = a + b`,
-  pregunta: "¿Cuál será el valor de la variable suma?",
-  placeholder: "Escribe tu respuesta",
-  respuestaCorrecta: "8",
-  pistas: [
-    "Debes sumar 5 + 3.",
-    "El resultado es mayor que 7."
-  ],
-  felicitacion: "🎉 ¡Felicidades! Tu respuesta es correcta."
-},,
-
-  variables_2: {
-    titulo: "Ejercicio",
+  variables_1: {
+    titulo: "Ejercicio 1",
     introduccion: "Observa el siguiente código:",
     codigo: `a = 5
 b = 3
@@ -39,28 +23,42 @@ suma = a + b`,
       "Debes sumar 5 + 3.",
       "El resultado es mayor que 7."
     ],
-    felicitacion: "🎉 ¡Felicidades! Ya entendiste cómo usar variables."
+    felicitacion: "🎉 ¡Felicidades! Tu respuesta es correcta."
   },
 
- 
+  variables_2: {
+    titulo: "Ejercicio 2",
+    introduccion: "Observa el siguiente código:",
+    codigo: `numero = 7
+numero = numero + 3`,
+    pregunta: "¿Qué valor tendrá ahora la variable numero?",
+    placeholder: "Escribe tu respuesta",
+    respuestaCorrecta: "10",
+    pistas: [
+      "Se suma 7 + 3.",
+      "El resultado es mayor que 9."
+    ],
+    felicitacion: "🎉 ¡Correcto! Ahora entiendes cómo cambiar valores."
+  },
+
   variables_3: {
-  titulo: "Ejercicio",
-  introduccion: "Observa el siguiente código:",
-  codigo: `x = 2
+    titulo: "Ejercicio 3",
+    introduccion: "Observa el siguiente código:",
+    codigo: `x = 2
 y = 4
 resultado = x * y`,
-  pregunta: "¿Cuál será el valor de la variable resultado?",
-  placeholder: "Escribe tu respuesta",
-  respuestaCorrecta: "8",
-  pistas: [
-    "Debes multiplicar 2 por 4.",
-    "El resultado es mayor que 7."
-  ],
-  felicitacion: "🎉 ¡Excelente! Has entendido cómo usar variables."
-},
+    pregunta: "¿Cuál será el valor de la variable resultado?",
+    placeholder: "Escribe tu respuesta",
+    respuestaCorrecta: "8",
+    pistas: [
+      "Debes multiplicar 2 por 4.",
+      "El resultado es mayor que 7."
+    ],
+    felicitacion: "🎉 ¡Excelente! Has entendido cómo usar variables."
+  },
 
   condicionales_1: {
-    titulo: "Ejercicio",
+    titulo: "Ejercicio 1",
     introduccion: "Observa la siguiente condición:",
     codigo: `a = 8
 b = 5
@@ -78,7 +76,7 @@ if a > b:
   },
 
   ciclos_1: {
-    titulo: "Ejercicio",
+    titulo: "Ejercicio 1",
     introduccion: "Observa el siguiente ciclo:",
     codigo: `i = 1
 
@@ -96,7 +94,7 @@ while i <= 3:
   },
 
   arreglos_1: {
-    titulo: "Ejercicio",
+    titulo: "Ejercicio 1",
     introduccion: "Observa el siguiente arreglo:",
     codigo: `numeros = [8, 9, 10]`,
     pregunta: "¿Qué valor está en la posición 1?",
@@ -110,7 +108,7 @@ while i <= 3:
   },
 
   funciones_1: {
-    titulo: "Ejercicio",
+    titulo: "Ejercicio 1",
     introduccion: "Observa la siguiente función:",
     codigo: `def sumar(a, b):
     return a + b
@@ -149,7 +147,7 @@ function githubBlobUrl(repoUrl, branch, path) {
 }
 
 function setActiveButton(id) {
-  [...nav.querySelectorAll("button")].forEach(b => b.classList.remove("active"));
+  [...nav.querySelectorAll("button")].forEach((b) => b.classList.remove("active"));
   const btn = nav.querySelector(`button[data-id="${id}"]`);
   if (btn) btn.classList.add("active");
 }
@@ -158,20 +156,20 @@ function renderMenu(sections, term = "") {
   nav.innerHTML = "";
   const t = term.trim().toLowerCase();
 
-  sections.forEach(sec => {
+  sections.forEach((sec) => {
     const items = !t
-      ? sec.items
-      : sec.items.filter(i =>
+      ? (sec.items || [])
+      : (sec.items || []).filter((i) =>
           (sec.title + " " + i.label + " " + i.id).toLowerCase().includes(t)
         );
 
-    if (!items || items.length === 0) return;
+    if (!items.length) return;
 
     const h = document.createElement("h3");
     h.textContent = sec.title;
     nav.appendChild(h);
 
-    items.forEach(item => {
+    items.forEach((item) => {
       const b = document.createElement("button");
       b.textContent = item.label;
       b.dataset.id = item.id;
@@ -263,8 +261,7 @@ function checkExercise(exerciseId, box) {
     return;
   }
 
-  exerciseAttempts[exerciseId]++;
-
+  exerciseAttempts[exerciseId] += 1;
   const attempt = exerciseAttempts[exerciseId];
 
   if (attempt <= 2) {
@@ -336,24 +333,24 @@ async function load(item) {
 }
 
 fetch(`./contenido.json?v=${Date.now()}`)
-  .then(r => {
+  .then((r) => {
     if (!r.ok) throw new Error(`No se pudo cargar contenido.json (${r.status})`);
     return r.json();
   })
-  .then(data => {
+  .then((data) => {
     DATA = data;
 
     btnRepo.href = DATA.repoUrl || "#";
 
     renderMenu(DATA.sections || []);
 
-    search.addEventListener("input", e => {
+    search.addEventListener("input", (e) => {
       renderMenu(DATA.sections || [], e.target.value);
     });
 
-    const first = (DATA.sections || []).flatMap(s => s.items || [])[0];
+    const first = (DATA.sections || []).flatMap((s) => s.items || [])[0];
     if (first) load(first);
   })
-  .catch(err => {
+  .catch((err) => {
     viewer.innerHTML = `<p><strong>Error:</strong> ${escapeHtml(err.message)}</p>`;
   });
