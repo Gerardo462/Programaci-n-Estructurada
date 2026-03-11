@@ -163,22 +163,30 @@ function renderExercises(html) {
     }
 
     return `
-      <div class="exercise-box" data-exercise-id="${escapeHtml(exerciseId)}">
-        <p><strong>Ejercicio interactivo</strong></p>
-        <p>${escapeHtml(ex.pregunta)}</p>
-        <input
-          type="text"
-          class="exercise-input"
-          placeholder="${escapeHtml(ex.placeholder)}"
-        >
-        <button
-          class="exercise-btn"
-          data-exercise-id="${escapeHtml(exerciseId)}"
-          type="button"
-        >
-          Enviar respuesta
-        </button>
-        <p class="exercise-message"></p>
+      <div class="exercise-card" data-exercise-id="${escapeHtml(exerciseId)}">
+        <div class="exercise-card-header">
+          <h3>Ejercicio</h3>
+        </div>
+
+        <div class="exercise-card-body">
+          <p class="exercise-question">${escapeHtml(ex.pregunta)}</p>
+
+          <input
+            type="text"
+            class="exercise-input"
+            placeholder="${escapeHtml(ex.placeholder)}"
+          >
+
+          <button
+            class="exercise-btn"
+            data-exercise-id="${escapeHtml(exerciseId)}"
+            type="button"
+          >
+            Enviar respuesta
+          </button>
+
+          <p class="exercise-message"></p>
+        </div>
       </div>
     `;
   });
