@@ -8,261 +8,328 @@ const search = document.getElementById("search");
 const BRANCH_CANDIDATES = ["main", "master", "principal"];
 let BRANCH = BRANCH_CANDIDATES[0];
 let DATA = null;
-
 const EXERCISES = {
-  variables_1: {
-    titulo: "Ejercicio 1",
-    introduccion: "Observa el siguiente código:",
-    codigo: `a = 5
-b = 3
-suma = a + b`,
-    pregunta: "¿Cuál será el valor de la variable suma?",
-    placeholder: "Escribe tu respuesta",
-    respuestaCorrecta: "8",
-    pistas: [
-      "Debes sumar 5 + 3.",
-      "El resultado es mayor que 7."
-    ],
-    felicitacion: "🎉 ¡Felicidades! Tu respuesta es correcta."
-  },
 
-  variables_2: {
-    titulo: "Ejercicio 2",
-    introduccion: "Observa el siguiente código:",
-    codigo: `numero = 7
-numero = numero + 3`,
-    pregunta: "¿Qué valor tendrá ahora la variable numero?",
-    placeholder: "Escribe tu respuesta",
-    respuestaCorrecta: "10",
-    pistas: [
-      "Se suma 7 + 3.",
-      "El resultado es mayor que 9."
-    ],
-    felicitacion: "🎉 ¡Correcto! Ahora entiendes cómo cambiar valores."
-  },
+variables_1:{
+titulo:"Ejercicio 1",
+introduccion:"Observa el siguiente código:",
+codigo:`a = 4
+b = 6
+resultado = a + b`,
+pregunta:"¿Cuál será el valor de la variable resultado?",
+placeholder:"Escribe tu respuesta",
+respuestaCorrecta:"10",
+pistas:[
+"Suma los valores de a y b.",
+"4 + 6 = ?"
+],
+felicitacion:"🎉 ¡Felicidades! La respuesta es correcta."
+},
 
-  variables_3: {
-    titulo: "Ejercicio 3",
-    introduccion: "Observa el siguiente código:",
-    codigo: `x = 2
-y = 4
+variables_2:{
+titulo:"Ejercicio 2",
+introduccion:"Observa el siguiente código:",
+codigo:`numero = 7
+numero = numero + 2`,
+pregunta:"¿Cuál será el valor final de numero?",
+placeholder:"Escribe tu respuesta",
+respuestaCorrecta:"9",
+pistas:[
+"El valor inicial es 7.",
+"Se suma 2 al valor."
+],
+felicitacion:"🎉 ¡Muy bien!"
+},
+
+variables_3:{
+titulo:"Ejercicio 3",
+introduccion:"Observa el siguiente código:",
+codigo:`x = 3
+y = 5
 resultado = x * y`,
-    pregunta: "¿Cuál será el valor de la variable resultado?",
-    placeholder: "Escribe tu respuesta",
-    respuestaCorrecta: "8",
-    pistas: [
-      "Debes multiplicar 2 por 4.",
-      "El resultado es mayor que 7."
-    ],
-    felicitacion: "🎉 ¡Excelente! Has entendido cómo usar variables."
-  },
+pregunta:"¿Cuál será el valor de resultado?",
+placeholder:"Escribe tu respuesta",
+respuestaCorrecta:"15",
+pistas:[
+"Debes multiplicar.",
+"3 × 5 = ?"
+],
+felicitacion:"🎉 ¡Correcto!"
+},
 
-  condicionales_1: {
-    titulo: "Ejercicio 1",
-    introduccion: "Observa el siguiente código:",
-    codigo: `edad = 20
+condicionales_1:{
+titulo:"Ejercicio 1",
+introduccion:"Observa el siguiente código:",
+codigo:`edad = 20
 
 if edad >= 18:
-    print("Puede votar")`,
-    pregunta: "¿Se cumple la condición edad >= 18?",
-    placeholder: "Escribe si o no",
-    respuestaCorrecta: "si",
-    pistas: [
-      "Compara 20 con 18.",
-      "20 sí es mayor que 18."
-    ],
-    felicitacion: "🎉 ¡Felicidades! Entendiste la condición."
-  },
+    print("Puede entrar")`,
+pregunta:"¿Se cumple la condición edad >= 18?",
+placeholder:"Escribe si o no",
+respuestaCorrecta:"si",
+pistas:[
+"Compara 20 con 18.",
+"20 es mayor que 18."
+],
+felicitacion:"🎉 ¡Correcto!"
+},
 
-  condicionales_2: {
-    titulo: "Ejercicio 2",
-    introduccion: "Observa el siguiente código:",
-    codigo: `numero = -2
+condicionales_2:{
+titulo:"Ejercicio 2",
+introduccion:"Observa el siguiente código:",
+codigo:`numero = -3
 
 if numero > 0:
-    print("Es positivo")
+    print("Positivo")
 else:
-    print("No es positivo")`,
-    pregunta: "¿Qué mensaje mostrará el programa?",
-    placeholder: "Escribe tu respuesta",
-    respuestaCorrecta: "no es positivo",
-    pistas: [
-      "La variable numero vale -2.",
-      "-2 no es mayor que 0."
-    ],
-    felicitacion: "🎉 ¡Muy bien! Ya entiendes el uso de else."
-  },
+    print("No positivo")`,
+pregunta:"¿Qué mensaje se mostrará?",
+placeholder:"Escribe tu respuesta",
+respuestaCorrecta:"no positivo",
+pistas:[
+"El número es negativo.",
+"No es mayor que 0."
+],
+felicitacion:"🎉 ¡Bien hecho!"
+},
 
-  condicionales_3: {
-    titulo: "Ejercicio 3",
-    introduccion: "Observa la siguiente comparación:",
-    codigo: `x = 10
-y = 10
+condicionales_3:{
+titulo:"Ejercicio 3",
+introduccion:"Observa la comparación:",
+codigo:`x = 8
+y = 8
 
 x == y`,
-    pregunta: "¿La expresión x == y es verdadera o falsa?",
-    placeholder: "Escribe verdadera o falsa",
-    respuestaCorrecta: "verdadera",
-    pistas: [
-      "Compara el valor de x con el de y.",
-      "Ambas variables valen 10."
-    ],
-    felicitacion: "🎉 ¡Correcto! Ya sabes comparar valores."
-  },
+pregunta:"¿La expresión es verdadera o falsa?",
+placeholder:"Escribe verdadera o falsa",
+respuestaCorrecta:"verdadera",
+pistas:[
+"Ambos valores son iguales.",
+"8 es igual a 8."
+],
+felicitacion:"🎉 ¡Correcto!"
+},
 
-  condicionales_4: {
-    titulo: "Ejercicio 4",
-    introduccion: "Observa el siguiente código:",
-    codigo: `calificacion = 5
+condicionales_4:{
+titulo:"Ejercicio 4",
+introduccion:"Observa el siguiente código:",
+codigo:`calificacion = 5
 
 if calificacion >= 6:
     print("Aprobado")
 else:
     print("Reprobado")`,
-    pregunta: "¿Qué mensaje mostrará el programa?",
-    placeholder: "Escribe tu respuesta",
-    respuestaCorrecta: "reprobado",
-    pistas: [
-      "La calificación es 5.",
-      "5 no es mayor o igual que 6."
-    ],
-    felicitacion: "🎉 ¡Excelente! Ya comprendes cómo decidir según una condición."
-  },
+pregunta:"¿Qué mensaje se mostrará?",
+placeholder:"Escribe tu respuesta",
+respuestaCorrecta:"reprobado",
+pistas:[
+"5 es menor que 6.",
+"Por lo tanto no aprueba."
+],
+felicitacion:"🎉 ¡Excelente!"
+},
 
-  ciclos_1: {
-    titulo: "Ejercicio 1",
-    introduccion: "Observa el siguiente ciclo:",
-    codigo: `i = 1
+ciclos_1:{
+titulo:"Ejercicio 1",
+introduccion:"Observa el siguiente ciclo:",
+codigo:`i = 1
 
-while i <= 5:
+while i <= 4:
     i = i + 1`,
-    pregunta: "¿Qué valor tendrá la variable i cuando termine el ciclo?",
-    placeholder: "Escribe tu respuesta",
-    respuestaCorrecta: "6",
-    pistas: [
-      "El ciclo continúa mientras i sea menor o igual a 5.",
-      "Cuando i supera 5 el ciclo termina."
-    ],
-    felicitacion: "🎉 ¡Correcto! El valor final es 6."
-  },
+pregunta:"¿Qué valor tendrá i al terminar?",
+placeholder:"Escribe tu respuesta",
+respuestaCorrecta:"5",
+pistas:[
+"El ciclo termina cuando i es mayor que 4.",
+"i incrementa en 1 cada vez."
+],
+felicitacion:"🎉 ¡Muy bien!"
+},
 
-  ciclos_2: {
-    titulo: "Ejercicio 2",
-    introduccion: "Observa el siguiente código:",
-    codigo: `contador = 0
+ciclos_2:{
+titulo:"Ejercicio 2",
+introduccion:"Observa el siguiente código:",
+codigo:`contador = 0
 
-while contador < 4:
-    print("Hola")
+while contador < 3:
     contador = contador + 1`,
-    pregunta: "¿Cuántas veces se imprimirá la palabra 'Hola'?",
-    placeholder: "Escribe un número",
-    respuestaCorrecta: "4",
-    pistas: [
-      "El contador empieza en 0.",
-      "El ciclo termina cuando contador llega a 4."
-    ],
-    felicitacion: "🎉 ¡Muy bien! Se imprime 4 veces."
-  },
+pregunta:"¿Cuál será el valor final de contador?",
+placeholder:"Escribe tu respuesta",
+respuestaCorrecta:"3",
+pistas:[
+"Empieza en 0.",
+"Se incrementa hasta llegar a 3."
+],
+felicitacion:"🎉 ¡Correcto!"
+},
 
-  ciclos_3: {
-    titulo: "Ejercicio 3",
-    introduccion: "Observa el siguiente ciclo:",
-    codigo: `for i in range(5):
+ciclos_3:{
+titulo:"Ejercicio 3",
+introduccion:"Observa el siguiente ciclo:",
+codigo:`for i in range(4):
     print(i)`,
-    pregunta: "¿Cuántos números se mostrarán?",
-    placeholder: "Escribe un número",
-    respuestaCorrecta: "5",
-    pistas: [
-      "range(5) genera cinco valores.",
-      "Los valores son del 0 al 4."
-    ],
-    felicitacion: "🎉 ¡Excelente! Se muestran 5 números."
-  },
+pregunta:"¿Cuántos números se mostrarán?",
+placeholder:"Escribe un número",
+respuestaCorrecta:"4",
+pistas:[
+"range(4) genera 4 valores.",
+"Los valores son 0,1,2,3."
+],
+felicitacion:"🎉 ¡Excelente!"
+},
 
-  ciclos_4: {
-    titulo: "Ejercicio 4",
-    introduccion: "Observa el siguiente código:",
-    codigo: `resultado = 0
+ciclos_4:{
+titulo:"Ejercicio 4",
+introduccion:"Observa el siguiente código:",
+codigo:`resultado = 0
 
-for i in range(4):
-    resultado = resultado + 3`,
-    pregunta: "¿Cuál será el valor final de la variable resultado?",
-    placeholder: "Escribe tu respuesta",
-    respuestaCorrecta: "12",
-    pistas: [
-      "Se suma 3 cuatro veces.",
-      "3 + 3 + 3 + 3 = 12."
-    ],
-    felicitacion: "🎉 ¡Felicidades! Has entendido cómo usar ciclos."
-  },
- funciones_1: {
-  titulo: "Ejercicio 1",
-  introduccion: "Observa la siguiente función:",
-  codigo: `def saludar():
-    print("Buenos días")
+for i in range(3):
+    resultado = resultado + 4`,
+pregunta:"¿Cuál será el valor final de resultado?",
+placeholder:"Escribe tu respuesta",
+respuestaCorrecta:"12",
+pistas:[
+"Se suma 4 tres veces.",
+"4 + 4 + 4 = ?"
+],
+felicitacion:"🎉 ¡Muy bien!"
+},
+
+funciones_1:{
+titulo:"Ejercicio 1",
+introduccion:"Observa la siguiente función:",
+codigo:`def saludar():
+    print("Hola estudiante")
 
 saludar()`,
-  pregunta: "¿Qué texto mostrará el programa?",
-  placeholder: "Escribe tu respuesta",
-  respuestaCorrecta: "buenos días",
-  pistas: [
-    "La función imprime un texto.",
-    "Ese texto está dentro de print()."
-  ],
-  felicitacion: "🎉 ¡Correcto! La función muestra 'Buenos días'."
+pregunta:"¿Qué texto mostrará el programa?",
+placeholder:"Escribe tu respuesta",
+respuestaCorrecta:"hola estudiante",
+pistas:[
+"El texto está dentro de print.",
+"La función imprime ese texto."
+],
+felicitacion:"🎉 ¡Correcto!"
 },
 
-funciones_2: {
-  titulo: "Ejercicio 2",
-  introduccion: "Observa la siguiente función:",
-  codigo: `def mostrar_doble(numero):
+funciones_2:{
+titulo:"Ejercicio 2",
+introduccion:"Observa la siguiente función:",
+codigo:`def doble(numero):
     print(numero * 2)
 
-mostrar_doble(4)`,
-  pregunta: "¿Qué número mostrará el programa?",
-  placeholder: "Escribe tu respuesta",
-  respuestaCorrecta: "8",
-  pistas: [
-    "La función multiplica el número por 2.",
-    "4 × 2 = ?"
-  ],
-  felicitacion: "🎉 ¡Muy bien! La función imprime 8."
+doble(6)`,
+pregunta:"¿Qué número mostrará el programa?",
+placeholder:"Escribe tu respuesta",
+respuestaCorrecta:"12",
+pistas:[
+"La función multiplica por 2.",
+"6 × 2 = ?"
+],
+felicitacion:"🎉 ¡Bien hecho!"
 },
 
-funciones_3: {
-  titulo: "Ejercicio 3",
-  introduccion: "Observa la siguiente función:",
-  codigo: `def restar(a, b):
+funciones_3:{
+titulo:"Ejercicio 3",
+introduccion:"Observa la siguiente función:",
+codigo:`def restar(a,b):
     return a - b
 
-resultado = restar(9, 3)`,
-  pregunta: "¿Cuál será el valor de la variable resultado?",
-  placeholder: "Escribe tu respuesta",
-  respuestaCorrecta: "6",
-  pistas: [
-    "La función resta los números.",
-    "9 - 3 = ?"
-  ],
-  felicitacion: "🎉 ¡Excelente! El resultado es 6."
+resultado = restar(10,4)`,
+pregunta:"¿Cuál será el valor de resultado?",
+placeholder:"Escribe tu respuesta",
+respuestaCorrecta:"6",
+pistas:[
+"Debes restar.",
+"10 - 4 = ?"
+],
+felicitacion:"🎉 ¡Excelente!"
 },
 
-funciones_4: {
-  titulo: "Ejercicio 4",
-  introduccion: "Observa la siguiente función:",
-  codigo: `def triplicar(numero):
+funciones_4:{
+titulo:"Ejercicio 4",
+introduccion:"Observa la siguiente función:",
+codigo:`def triplicar(numero):
     return numero * 3
 
-valor = triplicar(5)`,
-  pregunta: "¿Cuál será el valor de la variable valor?",
-  placeholder: "Escribe tu respuesta",
-  respuestaCorrecta: "15",
-  pistas: [
-    "La función multiplica el número por 3.",
-    "5 × 3 = ?"
-  ],
-  felicitacion: "🎉 ¡Felicidades! Has entendido cómo usar funciones."
-
+valor = triplicar(4)`,
+pregunta:"¿Cuál será el valor de valor?",
+placeholder:"Escribe tu respuesta",
+respuestaCorrecta:"12",
+pistas:[
+"Multiplica por 3.",
+"4 × 3 = ?"
+],
+felicitacion:"🎉 ¡Correcto!"
 },
+
+arreglos_1:{
+titulo:"Ejercicio 1",
+introduccion:"Observa el arreglo:",
+codigo:`animales = ["perro","gato","pez"]
+
+print(animales[1])`,
+pregunta:"¿Qué valor se mostrará?",
+placeholder:"Escribe tu respuesta",
+respuestaCorrecta:"gato",
+pistas:[
+"Recuerda que el índice empieza en 0.",
+"La posición 1 es el segundo elemento."
+],
+felicitacion:"🎉 ¡Muy bien!"
+},
+
+arreglos_2:{
+titulo:"Ejercicio 2",
+introduccion:"Observa el siguiente código:",
+codigo:`numeros = [3,6,9]
+
+numeros[0] = 10
+print(numeros)`,
+pregunta:"¿Cómo quedará el arreglo?",
+placeholder:"Escribe tu respuesta",
+respuestaCorrecta:"[10,6,9]",
+pistas:[
+"Se cambia la posición 0.",
+"El 3 se reemplaza por 10."
+],
+felicitacion:"🎉 ¡Correcto!"
+},
+
+arreglos_3:{
+titulo:"Ejercicio 3",
+introduccion:"Observa el siguiente código:",
+codigo:`letras = ["a","b","c"]
+
+for l in letras:
+    print(l)`,
+pregunta:"¿Cuántas veces se ejecuta el print?",
+placeholder:"Escribe un número",
+respuestaCorrecta:"3",
+pistas:[
+"El ciclo recorre todos los elementos.",
+"Hay tres letras."
+],
+felicitacion:"🎉 ¡Excelente!"
+},
+
+arreglos_4:{
+titulo:"Ejercicio 4",
+introduccion:"Observa el siguiente arreglo:",
+codigo:`colores = ["rojo","azul","verde","amarillo"]
+
+print(len(colores))`,
+pregunta:"¿Qué número se mostrará?",
+placeholder:"Escribe tu respuesta",
+respuestaCorrecta:"4",
+pistas:[
+"len cuenta los elementos.",
+"Hay cuatro colores."
+],
+felicitacion:"🎉 ¡Felicidades!"
+}
+
+};
  
 const exerciseAttempts = {};
 
