@@ -75,6 +75,62 @@ if a > b:
     felicitacion: "🎉 ¡Felicidades! Entendiste la condición."
   },
 
+
+  condicionales_2: {
+  titulo: "Ejercicio 2",
+  introduccion: "Observa el siguiente código:",
+  codigo: `numero = -2
+
+if numero > 0:
+    print("Es positivo")
+else:
+    print("No es positivo")`,
+  pregunta: "¿Qué mensaje mostrará el programa?",
+  placeholder: "Escribe tu respuesta",
+  respuestaCorrecta: "no es positivo",
+  pistas: [
+    "La variable numero vale -2.",
+    "-2 no es mayor que 0."
+  ],
+  felicitacion: "🎉 ¡Muy bien! Ya entiendes el uso de else."
+},
+
+condicionales_3: {
+  titulo: "Ejercicio 3",
+  introduccion: "Observa la siguiente comparación:",
+  codigo: `x = 10
+y = 10
+
+x == y`,
+  pregunta: "¿La expresión x == y es verdadera o falsa?",
+  placeholder: "Escribe verdadera o falsa",
+  respuestaCorrecta: "verdadera",
+  pistas: [
+    "Compara el valor de x con el de y.",
+    "Ambas variables valen 10."
+  ],
+  felicitacion: "🎉 ¡Correcto! Ya sabes comparar valores."
+},
+
+condicionales_4: {
+  titulo: "Ejercicio 4",
+  introduccion: "Observa el siguiente código:",
+  codigo: `calificacion = 5
+
+if calificacion >= 6:
+    print("Aprobado")
+else:
+    print("Reprobado")`,
+  pregunta: "¿Qué mensaje mostrará el programa?",
+  placeholder: "Escribe tu respuesta",
+  respuestaCorrecta: "reprobado",
+  pistas: [
+    "La calificación es 5.",
+    "5 no es mayor o igual que 6."
+  ],
+  felicitacion: "🎉 ¡Excelente! Ya comprendes cómo decidir según una condición."
+},
+
   ciclos_1: {
     titulo: "Ejercicio 1",
     introduccion: "Observa el siguiente ciclo:",
