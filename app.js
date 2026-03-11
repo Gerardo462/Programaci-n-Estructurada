@@ -312,7 +312,6 @@ pistas:[
 ],
 felicitacion:"🎉 ¡Excelente!"
 },
-
 arreglos_4:{
 titulo:"Ejercicio 4",
 introduccion:"Observa el siguiente código:",
@@ -328,7 +327,7 @@ pistas:[
 "6 + 5 = 11."
 ],
 felicitacion:"🎉 ¡Excelente! Entendiste cómo modificar valores dentro de un arreglo."
-}
+},
 
 diagrama_guiado_1: {
   titulo: "Crear un diagrama de flujo",
