@@ -131,22 +131,22 @@ else:
   felicitacion: "🎉 ¡Excelente! Ya comprendes cómo decidir según una condición."
 },
 
-  ciclos_1: {
+  
+ciclos_1: {
   titulo: "Ejercicio 1",
   introduccion: "Observa el siguiente ciclo:",
   codigo: `i = 1
 
-while i <= 3:
-    print(i)
+while i <= 5:
     i = i + 1`,
-  pregunta: "¿Cuántas veces se ejecuta el ciclo?",
-  placeholder: "Escribe un número",
-  respuestaCorrecta: "3",
+  pregunta: "¿Qué valor tendrá la variable i cuando termine el ciclo?",
+  placeholder: "Escribe tu respuesta",
+  respuestaCorrecta: "6",
   pistas: [
-    "El ciclo empieza en 1.",
-    "Se repite mientras i sea menor o igual a 3."
+    "El ciclo continúa mientras i sea menor o igual a 5.",
+    "Cuando i supera 5 el ciclo termina."
   ],
-  felicitacion: "🎉 ¡Correcto! El ciclo se repite 3 veces."
+  felicitacion: "🎉 ¡Correcto! El valor final es 6."
 },
 
 ciclos_2: {
@@ -154,48 +154,49 @@ ciclos_2: {
   introduccion: "Observa el siguiente código:",
   codigo: `contador = 0
 
-while contador < 5:
+while contador < 4:
+    print("Hola")
     contador = contador + 1`,
-  pregunta: "¿Qué valor tendrá contador al final?",
-  placeholder: "Escribe tu respuesta",
-  respuestaCorrecta: "5",
+  pregunta: "¿Cuántas veces se imprimirá la palabra 'Hola'?",
+  placeholder: "Escribe un número",
+  respuestaCorrecta: "4",
   pistas: [
     "El contador empieza en 0.",
-    "Se incrementa hasta que llegue a 5."
+    "El ciclo termina cuando contador llega a 4."
   ],
-  felicitacion: "🎉 ¡Muy bien! El valor final es 5."
+  felicitacion: "🎉 ¡Muy bien! Se imprime 4 veces."
 },
 
 ciclos_3: {
   titulo: "Ejercicio 3",
   introduccion: "Observa el siguiente ciclo:",
-  codigo: `for i in range(3):
+  codigo: `for i in range(5):
     print(i)`,
   pregunta: "¿Cuántos números se mostrarán?",
   placeholder: "Escribe un número",
-  respuestaCorrecta: "3",
+  respuestaCorrecta: "5",
   pistas: [
-    "range(3) genera tres valores.",
-    "Los valores son 0, 1 y 2."
+    "range(5) genera cinco valores.",
+    "Los valores son del 0 al 4."
   ],
-  felicitacion: "🎉 ¡Excelente! El ciclo imprime 3 números."
+  felicitacion: "🎉 ¡Excelente! Se muestran 5 números."
 },
 
 ciclos_4: {
   titulo: "Ejercicio 4",
   introduccion: "Observa el siguiente código:",
-  codigo: `suma = 0
+  codigo: `resultado = 0
 
-for i in range(3):
-    suma = suma + 2`,
-  pregunta: "¿Cuál será el valor final de suma?",
+for i in range(4):
+    resultado = resultado + 3`,
+  pregunta: "¿Cuál será el valor final de la variable resultado?",
   placeholder: "Escribe tu respuesta",
-  respuestaCorrecta: "6",
+  respuestaCorrecta: "12",
   pistas: [
-    "Se suma 2 tres veces.",
-    "2 + 2 + 2 = 6."
+    "Se suma 3 cuatro veces.",
+    "3 + 3 + 3 + 3 = 12."
   ],
-  felicitacion: "🎉 ¡Felicidades! Has entendido cómo funcionan los ciclos."
+  felicitacion: "🎉 ¡Felicidades! Has entendido cómo usar ciclos."
 },
 
   arreglos_1: {
