@@ -196,11 +196,71 @@ for i in range(4):
     felicitacion: "🎉 ¡Felicidades! Has entendido cómo usar ciclos."
   },
 
+arreglos_1: {
+  titulo: "Ejercicio 1",
+  introduccion: "Observa el siguiente arreglo:",
+  codigo: `animales = ["perro", "gato", "pez"]
 
+print(animales[2])`,
+  pregunta: "¿Qué valor mostrará el programa?",
+  placeholder: "Escribe tu respuesta",
+  respuestaCorrecta: "pez",
+  pistas: [
+    "Recuerda que la primera posición es la 0.",
+    "La posición 2 es el tercer elemento."
+  ],
+  felicitacion: "🎉 ¡Correcto! El programa muestra 'pez'."
+},
 
+arreglos_2: {
+  titulo: "Ejercicio 2",
+  introduccion: "Observa el siguiente código:",
+  codigo: `numeros = [3, 6, 9]
 
+numeros[1] = 12
+print(numeros)`,
+  pregunta: "¿Cómo quedará el arreglo después del cambio?",
+  placeholder: "Escribe tu respuesta",
+  respuestaCorrecta: "[3, 12, 9]",
+  pistas: [
+    "Se cambia el valor de la posición 1.",
+    "La posición 1 originalmente vale 6."
+  ],
+  felicitacion: "🎉 ¡Muy bien! El arreglo queda [3, 12, 9]."
+},
 
+arreglos_3: {
+  titulo: "Ejercicio 3",
+  introduccion: "Observa el siguiente ciclo:",
+  codigo: `letras = ["a", "b", "c", "d"]
 
+for letra in letras:
+    print(letra)`,
+  pregunta: "¿Cuántas veces se ejecuta el print?",
+  placeholder: "Escribe un número",
+  respuestaCorrecta: "4",
+  pistas: [
+    "El ciclo recorre todos los elementos del arreglo.",
+    "El arreglo tiene 4 letras."
+  ],
+  felicitacion: "🎉 ¡Excelente! El print se ejecuta 4 veces."
+},
+
+arreglos_4: {
+  titulo: "Ejercicio 4",
+  introduccion: "Observa el siguiente arreglo:",
+  codigo: `nombres = ["Ana", "Luis", "María", "José", "Elena"]
+
+print(len(nombres))`,
+  pregunta: "¿Qué número mostrará el programa?",
+  placeholder: "Escribe tu respuesta",
+  respuestaCorrecta: "5",
+  pistas: [
+    "len() cuenta cuántos elementos hay en el arreglo.",
+    "El arreglo tiene cinco nombres."
+  ],
+  felicitacion: "🎉 ¡Felicidades! El arreglo tiene 5 elementos."
+},
 
   
  funciones_1: {
@@ -269,74 +329,9 @@ valor = triplicar(5)`,
     "5 × 3 = ?"
   ],
   felicitacion: "🎉 ¡Felicidades! Has entendido cómo usar funciones."
-},
-  arreglos_1: {
-  titulo: "Ejercicio 1",
-  introduccion: "Observa el siguiente arreglo:",
-  codigo: `animales = ["perro", "gato", "pez"]
-
-print(animales[2])`,
-  pregunta: "¿Qué valor mostrará el programa?",
-  placeholder: "Escribe tu respuesta",
-  respuestaCorrecta: "pez",
-  pistas: [
-    "Recuerda que la primera posición es la 0.",
-    "La posición 2 es el tercer elemento."
-  ],
-  felicitacion: "🎉 ¡Correcto! El programa muestra 'pez'."
-},
-
-arreglos_2: {
-  titulo: "Ejercicio 2",
-  introduccion: "Observa el siguiente código:",
-  codigo: `numeros = [3, 6, 9]
-
-numeros[1] = 12
-print(numeros)`,
-  pregunta: "¿Cómo quedará el arreglo después del cambio?",
-  placeholder: "Escribe tu respuesta",
-  respuestaCorrecta: "[3, 12, 9]",
-  pistas: [
-    "Se cambia el valor de la posición 1.",
-    "La posición 1 originalmente vale 6."
-  ],
-  felicitacion: "🎉 ¡Muy bien! El arreglo queda [3, 12, 9]."
-},
-
-arreglos_3: {
-  titulo: "Ejercicio 3",
-  introduccion: "Observa el siguiente ciclo:",
-  codigo: `letras = ["a", "b", "c", "d"]
-
-for letra in letras:
-    print(letra)`,
-  pregunta: "¿Cuántas veces se ejecuta el print?",
-  placeholder: "Escribe un número",
-  respuestaCorrecta: "4",
-  pistas: [
-    "El ciclo recorre todos los elementos del arreglo.",
-    "El arreglo tiene 4 letras."
-  ],
-  felicitacion: "🎉 ¡Excelente! El print se ejecuta 4 veces."
-},
-
-arreglos_4: {
-  titulo: "Ejercicio 4",
-  introduccion: "Observa el siguiente arreglo:",
-  codigo: `nombres = ["Ana", "Luis", "María", "José", "Elena"]
-
-print(len(nombres))`,
-  pregunta: "¿Qué número mostrará el programa?",
-  placeholder: "Escribe tu respuesta",
-  respuestaCorrecta: "5",
-  pistas: [
-    "len() cuenta cuántos elementos hay en el arreglo.",
-    "El arreglo tiene cinco nombres."
-  ],
-  felicitacion: "🎉 ¡Felicidades! El arreglo tiene 5 elementos."
 }
 },
-  
+ 
 const exerciseAttempts = {};
 
 if (window.marked) {
