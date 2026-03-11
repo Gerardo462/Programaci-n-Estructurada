@@ -42,8 +42,6 @@ Entonces el valor de **suma** será **8**.
 
 ---
 
-## Ejercicio 1
-
 [[EJERCICIO:variables_1]]
 
 ---
@@ -66,17 +64,6 @@ Después el programa suma **3**, por lo que ahora **numero vale 10**.
 Esto se usa cuando un programa necesita **actualizar información**.
 
 ---
-
-## Ejercicio 2
-
-Observa el siguiente código:
-
-```python
-numero = 7
-numero = numero + 3
-```
-
-¿Qué valor tendrá ahora la variable **numero**?
 
 [[EJERCICIO:variables_2]]
 
@@ -111,18 +98,6 @@ resultado = x * y
 En este caso **resultado** guardará **8**.
 
 ---
-
-## Ejercicio 3
-
-Observa el siguiente código:
-
-```python
-x = 2
-y = 4
-resultado = x * y
-```
-
-¿Cuál será el valor de la variable **resultado**?
 
 [[EJERCICIO:variables_3]]
 
