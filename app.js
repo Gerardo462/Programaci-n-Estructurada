@@ -196,74 +196,74 @@ for i in range(4):
     felicitacion: "🎉 ¡Felicidades! Has entendido cómo usar ciclos."
   },
 
-  funciones_1: {
-    titulo: "Ejercicio 1",
-    introduccion: "Observa la siguiente función:",
-    codigo: `def mostrar():
-    print("Hola mundo")
+ funciones_1: {
+  titulo: "Ejercicio 1",
+  introduccion: "Observa la siguiente función:",
+  codigo: `def saludar():
+    print("Buenos días")
 
-mostrar()`,
-    pregunta: "¿Qué texto mostrará el programa?",
-    placeholder: "Escribe tu respuesta",
-    respuestaCorrecta: "hola mundo",
-    pistas: [
-      "La función imprime un texto.",
-      "Ese texto aparece dentro de print()."
-    ],
-    felicitacion: "🎉 ¡Correcto! La función imprime 'Hola mundo'."
-  },
+saludar()`,
+  pregunta: "¿Qué texto mostrará el programa?",
+  placeholder: "Escribe tu respuesta",
+  respuestaCorrecta: "buenos días",
+  pistas: [
+    "La función imprime un texto.",
+    "Ese texto está dentro de print()."
+  ],
+  felicitacion: "🎉 ¡Correcto! La función muestra 'Buenos días'."
+},
 
-  funciones_2: {
-    titulo: "Ejercicio 2",
-    introduccion: "Observa la siguiente función:",
-    codigo: `def mostrar_numero(n):
-    print(n)
+funciones_2: {
+  titulo: "Ejercicio 2",
+  introduccion: "Observa la siguiente función:",
+  codigo: `def mostrar_doble(numero):
+    print(numero * 2)
 
-mostrar_numero(7)`,
-    pregunta: "¿Qué número mostrará el programa?",
-    placeholder: "Escribe tu respuesta",
-    respuestaCorrecta: "7",
-    pistas: [
-      "El número enviado a la función es 7.",
-      "La función imprime el parámetro recibido."
-    ],
-    felicitacion: "🎉 ¡Muy bien! La función muestra el número 7."
-  },
+mostrar_doble(4)`,
+  pregunta: "¿Qué número mostrará el programa?",
+  placeholder: "Escribe tu respuesta",
+  respuestaCorrecta: "8",
+  pistas: [
+    "La función multiplica el número por 2.",
+    "4 × 2 = ?"
+  ],
+  felicitacion: "🎉 ¡Muy bien! La función imprime 8."
+},
 
-  funciones_3: {
-    titulo: "Ejercicio 3",
-    introduccion: "Observa la siguiente función:",
-    codigo: `def multiplicar(a, b):
-    return a * b
+funciones_3: {
+  titulo: "Ejercicio 3",
+  introduccion: "Observa la siguiente función:",
+  codigo: `def restar(a, b):
+    return a - b
 
-resultado = multiplicar(2, 5)`,
-    pregunta: "¿Cuál será el valor de la variable resultado?",
-    placeholder: "Escribe tu respuesta",
-    respuestaCorrecta: "10",
-    pistas: [
-      "La función multiplica los valores.",
-      "2 × 5 = 10."
-    ],
-    felicitacion: "🎉 ¡Excelente! El resultado es 10."
-  },
+resultado = restar(9, 3)`,
+  pregunta: "¿Cuál será el valor de la variable resultado?",
+  placeholder: "Escribe tu respuesta",
+  respuestaCorrecta: "6",
+  pistas: [
+    "La función resta los números.",
+    "9 - 3 = ?"
+  ],
+  felicitacion: "🎉 ¡Excelente! El resultado es 6."
+},
 
-  funciones_4: {
-    titulo: "Ejercicio 4",
-    introduccion: "Observa la siguiente función:",
-    codigo: `def sumar(a, b):
-    return a + b
+funciones_4: {
+  titulo: "Ejercicio 4",
+  introduccion: "Observa la siguiente función:",
+  codigo: `def triplicar(numero):
+    return numero * 3
 
-valor = sumar(4, 3)`,
-    pregunta: "¿Cuál será el valor de la variable valor?",
-    placeholder: "Escribe tu respuesta",
-    respuestaCorrecta: "7",
-    pistas: [
-      "La función suma dos números.",
-      "4 + 3 = 7."
-    ],
-    felicitacion: "🎉 ¡Felicidades! Has entendido cómo funcionan las funciones."
-  }
-};
+valor = triplicar(5)`,
+  pregunta: "¿Cuál será el valor de la variable valor?",
+  placeholder: "Escribe tu respuesta",
+  respuestaCorrecta: "15",
+  pistas: [
+    "La función multiplica el número por 3.",
+    "5 × 3 = ?"
+  ],
+  felicitacion: "🎉 ¡Felicidades! Has entendido cómo usar funciones."
+}
+},
   
 const exerciseAttempts = {};
 
