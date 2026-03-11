@@ -213,24 +213,73 @@ for i in range(4):
     felicitacion: "🎉 ¡Felicidades! Ya entendiste cómo acceder a un arreglo."
   },
 
-  funciones_1: {
-    titulo: "Ejercicio 1",
-    introduccion: "Observa la siguiente función:",
-    codigo: `def sumar(a, b):
+funciones_1: {
+  titulo: "Ejercicio 1",
+  introduccion: "Observa la siguiente función:",
+  codigo: `def mostrar():
+    print("Hola mundo")
+
+mostrar()`,
+  pregunta: "¿Qué texto mostrará el programa?",
+  placeholder: "Escribe tu respuesta",
+  respuestaCorrecta: "hola mundo",
+  pistas: [
+    "La función imprime un texto.",
+    "Ese texto aparece dentro de print()."
+  ],
+  felicitacion: "🎉 ¡Correcto! La función imprime 'Hola mundo'."
+},
+
+funciones_2: {
+  titulo: "Ejercicio 2",
+  introduccion: "Observa la siguiente función:",
+  codigo: `def mostrar_numero(n):
+    print(n)
+
+mostrar_numero(7)`,
+  pregunta: "¿Qué número mostrará el programa?",
+  placeholder: "Escribe tu respuesta",
+  respuestaCorrecta: "7",
+  pistas: [
+    "El número enviado a la función es 7.",
+    "La función imprime el parámetro recibido."
+  ],
+  felicitacion: "🎉 ¡Muy bien! La función muestra el número 7."
+},
+
+funciones_3: {
+  titulo: "Ejercicio 3",
+  introduccion: "Observa la siguiente función:",
+  codigo: `def multiplicar(a, b):
+    return a * b
+
+resultado = multiplicar(2, 5)`,
+  pregunta: "¿Cuál será el valor de la variable resultado?",
+  placeholder: "Escribe tu respuesta",
+  respuestaCorrecta: "10",
+  pistas: [
+    "La función multiplica los valores.",
+    "2 × 5 = 10."
+  ],
+  felicitacion: "🎉 ¡Excelente! El resultado es 10."
+},
+
+funciones_4: {
+  titulo: "Ejercicio 4",
+  introduccion: "Observa la siguiente función:",
+  codigo: `def sumar(a, b):
     return a + b
 
-resultado = sumar(2, 3)`,
-    pregunta: "¿Qué valor tendrá la variable resultado?",
-    placeholder: "Escribe tu respuesta",
-    respuestaCorrecta: "5",
-    pistas: [
-      "La función suma 2 + 3.",
-      "El resultado es un número impar."
-    ],
-    felicitacion: "🎉 ¡Felicidades! Ya entendiste la idea de una función."
-  }
-};
-
+valor = sumar(4, 3)`,
+  pregunta: "¿Cuál será el valor de la variable valor?",
+  placeholder: "Escribe tu respuesta",
+  respuestaCorrecta: "7",
+  pistas: [
+    "La función suma dos números.",
+    "4 + 3 = 7."
+  ],
+  felicitacion: "🎉 ¡Felicidades! Has entendido cómo funcionan las funciones."
+},
 const exerciseAttempts = {};
 
 if (window.marked) {
