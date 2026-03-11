@@ -1,63 +1,65 @@
+# Repositorio educativo de Programación Estructurada
 
-
-Bienvenido al **Repositorio educativo como herramienta de apoyo para la enseñanza de la programación estructurada** de la  
+Bienvenido a este repositorio educativo desarrollado como herramienta de apoyo para el aprendizaje de **programación estructurada** en la
 **Universidad Autónoma Metropolitana – Unidad Cuajimalpa**.
 
-Este proyecto tiene como finalidad servir como material de apoyo académico para el aprendizaje de los fundamentos de la programación estructurada, organizando los contenidos de manera clara, progresiva y didáctica.
+Este proyecto reúne material introductorio y ejercicios prácticos que ayudan a comprender los fundamentos de la programación. La información está organizada de forma progresiva para facilitar el aprendizaje paso a paso.
 
 ---
 
-## 🎯 Objetivo del proyecto
+## Objetivo del proyecto
 
-El objetivo principal es proporcionar una plataforma digital organizada por niveles que permita:
+El propósito de este repositorio es ofrecer un espacio digital donde los estudiantes puedan consultar y practicar los conceptos básicos de programación estructurada.
 
-- Comprender los conceptos básicos de programación.
-- Aplicar estructuras de control fundamentales.
-- Desarrollar habilidades para resolver problemas computacionales.
-- Practicar mediante ejercicios y soluciones comentadas.
-- Apoyar el aprendizaje autónomo.
+A través de este material se busca:
 
----
-
-## 📚 Estructura del repositorio
-
-El contenido está organizado en las siguientes secciones:
-
-- **Nivel Básico**  
-  Introducción a variables, estructuras condicionales y ciclos.
-
-- **Nivel Intermedio**  
-  Funciones y estructuras de datos como arreglos.
-
-- **Ejercicios y Soluciones**  
-  Actividades prácticas para reforzar los conocimientos adquiridos.
-
-- **Pseudocódigo y Diagramas de Flujo**  
-  Representación lógica y visual de algoritmos.
-
-- **Recursos Complementarios**  
-  Material adicional de consulta.
+* Comprender los principios fundamentales de la programación.
+* Aprender a utilizar estructuras de control como condicionales y ciclos.
+* Desarrollar habilidades para resolver problemas mediante algoritmos.
+* Practicar con ejercicios acompañados de explicaciones y soluciones.
+* Fomentar el aprendizaje autónomo.
 
 ---
 
-## 👩‍💻 Metodología
+## Organización del contenido
 
-El proyecto sigue un enfoque estructurado basado en:
+El repositorio está dividido en diferentes secciones para facilitar la consulta y el aprendizaje:
 
-- Explicación conceptual
-- Ejemplos prácticos
-- Aplicación mediante ejercicios
-- Resolución con código en Python
+**Nivel Básico**
+Introducción a los conceptos fundamentales como variables, estructuras condicionales y ciclos.
 
-Este repositorio busca fortalecer el pensamiento lógico y la capacidad de abstracción, competencias fundamentales en la formación académica en tecnologías de la información.
+**Nivel Intermedio**
+Temas relacionados con funciones y estructuras de datos simples como los arreglos.
+
+**Ejercicios y Soluciones**
+Conjunto de actividades diseñadas para reforzar los temas vistos en cada sección.
+
+**Pseudocódigo y Diagramas de Flujo**
+Representaciones lógicas y visuales que ayudan a comprender la estructura de los algoritmos.
+
+**Recursos Complementarios**
+Material adicional que puede servir como apoyo para profundizar en los temas.
 
 ---
 
-## 📌 Recomendación
+##  Forma de trabajo
 
-Se sugiere avanzar en orden, comenzando por el nivel básico y progresando hacia niveles más complejos.
+El contenido del repositorio sigue una estructura sencilla:
+
+1. Explicación del concepto
+2. Ejemplo práctico
+3. Ejercicios de aplicación
+4. Posibles soluciones en Python
+
+Este enfoque busca ayudar a desarrollar el pensamiento lógico y la capacidad de resolver problemas paso a paso, habilidades esenciales en el aprendizaje de la programación.
 
 ---
 
-**Universidad Autónoma Metropolitana  
-Unidad Cuajimalpa**
+##  Recomendación
+
+Para aprovechar mejor el material, se recomienda comenzar por el **nivel básico** y avanzar gradualmente hacia los demás temas.
+
+---
+
+**Universidad Autónoma Metropolitana**
+**Unidad Cuajimalpa**
