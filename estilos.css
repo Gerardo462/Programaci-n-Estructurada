@@ -260,13 +260,8 @@ body{
   .search{ width:min(320px, 46vw); }
 }
 
----
 
-## También necesitas esto en `estilos.css`
-
-Para que se vea bonito, pega esto:
-
-```css
+```
 .exercise-box {
   background: #f7f9fc;
   border: 1px solid #d9e2f1;
