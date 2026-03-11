@@ -315,18 +315,19 @@ felicitacion:"🎉 ¡Excelente!"
 
 arreglos_4:{
 titulo:"Ejercicio 4",
-introduccion:"Observa el siguiente arreglo:",
-codigo:`colores = ["rojo","azul","verde","amarillo"]
+introduccion:"Observa el siguiente código:",
+codigo:`numeros = [2, 4, 6, 8]
 
-print(len(colores))`,
-pregunta:"¿Qué número se mostrará?",
+numeros[2] = numeros[2] + 5
+print(numeros)`,
+pregunta:"¿Cómo quedará el arreglo después de ejecutar el programa?",
 placeholder:"Escribe tu respuesta",
-respuestaCorrecta:"4",
+respuestaCorrecta:"[2, 4, 11, 8]",
 pistas:[
-"len cuenta los elementos.",
-"Hay cuatro colores."
+"El valor en la posición 2 es 6.",
+"6 + 5 = 11."
 ],
-felicitacion:"🎉 ¡Felicidades!"
+felicitacion:"🎉 ¡Excelente! Entendiste cómo modificar valores dentro de un arreglo."
 }
 
 };
