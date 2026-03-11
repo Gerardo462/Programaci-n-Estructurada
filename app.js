@@ -5,15 +5,17 @@ const sourceLink = document.getElementById("sourceLink");
 const btnRepo = document.getElementById("btnRepo");
 const search = document.getElementById("search");
 
-// Ramas típicas en GitHub
 const BRANCH_CANDIDATES = ["main", "master", "principal"];
 let BRANCH = BRANCH_CANDIDATES[0];
-
 let DATA = null;
 
-// Catálogo de ejercicios
 const EXERCISES = {
   variables_1: {
+    titulo: "Ejercicio",
+    introduccion: "Observa el siguiente código:",
+    codigo: `x = 4
+y = 6
+resultado = x + y`,
     pregunta: "¿Cuál será el valor de la variable resultado?",
     placeholder: "Escribe tu respuesta",
     respuestaCorrecta: "10",
@@ -25,7 +27,12 @@ const EXERCISES = {
   },
 
   variables_2: {
-    pregunta: "Si a = 5 y b = 3, ¿cuánto vale suma = a + b?",
+    titulo: "Ejercicio",
+    introduccion: "Observa el siguiente código:",
+    codigo: `a = 5
+b = 3
+suma = a + b`,
+    pregunta: "¿Cuál será el valor de la variable suma?",
     placeholder: "Escribe tu respuesta",
     respuestaCorrecta: "8",
     pistas: [
@@ -36,7 +43,14 @@ const EXERCISES = {
   },
 
   condicionales_1: {
-    pregunta: "Si a = 8 y b = 5, ¿se cumple la condición a > b?",
+    titulo: "Ejercicio",
+    introduccion: "Observa la siguiente condición:",
+    codigo: `a = 8
+b = 5
+
+if a > b:
+    print("a es mayor")`,
+    pregunta: "¿Se cumple la condición a > b?",
     placeholder: "Escribe si o no",
     respuestaCorrecta: "si",
     pistas: [
@@ -47,7 +61,14 @@ const EXERCISES = {
   },
 
   ciclos_1: {
-    pregunta: "Si i empieza en 1 y el ciclo va mientras i <= 3, ¿cuántas veces se repite?",
+    titulo: "Ejercicio",
+    introduccion: "Observa el siguiente ciclo:",
+    codigo: `i = 1
+
+while i <= 3:
+    print(i)
+    i = i + 1`,
+    pregunta: "¿Cuántas veces se repite el ciclo?",
     placeholder: "Escribe un número",
     respuestaCorrecta: "3",
     pistas: [
@@ -58,7 +79,10 @@ const EXERCISES = {
   },
 
   arreglos_1: {
-    pregunta: "En el arreglo [8, 9, 10], ¿qué valor está en la posición 1?",
+    titulo: "Ejercicio",
+    introduccion: "Observa el siguiente arreglo:",
+    codigo: `numeros = [8, 9, 10]`,
+    pregunta: "¿Qué valor está en la posición 1?",
     placeholder: "Escribe tu respuesta",
     respuestaCorrecta: "9",
     pistas: [
@@ -69,21 +93,25 @@ const EXERCISES = {
   },
 
   funciones_1: {
-    pregunta: "Si una función sumar(2, 3) regresa la suma, ¿qué resultado devuelve?",
+    titulo: "Ejercicio",
+    introduccion: "Observa la siguiente función:",
+    codigo: `def sumar(a, b):
+    return a + b
+
+resultado = sumar(2, 3)`,
+    pregunta: "¿Qué valor tendrá la variable resultado?",
     placeholder: "Escribe tu respuesta",
     respuestaCorrecta: "5",
     pistas: [
-      "La función debe sumar 2 + 3.",
+      "La función suma 2 + 3.",
       "El resultado es un número impar."
     ],
     felicitacion: "🎉 ¡Felicidades! Ya entendiste la idea de una función."
   }
 };
 
-// Contador de intentos por ejercicio
 const exerciseAttempts = {};
 
-// Mejor render de Markdown
 if (window.marked) {
   marked.setOptions({ gfm: true, breaks: true });
 }
@@ -124,7 +152,6 @@ function renderMenu(sections, term = "") {
 
     const h = document.createElement("h3");
     h.textContent = sec.title;
-    h.style.margin = "10px 0 8px";
     nav.appendChild(h);
 
     items.forEach(item => {
@@ -155,22 +182,42 @@ function normalizeText(text) {
 }
 
 function renderExercises(html) {
-  return html.replace(/<p>\s*\[\[EJERCICIO:([a-zA-Z0-9_-]+)\]\]\s*<\/p>/gi, function (_, exerciseId) {
+  return html.replace(/<p>\s*\[\[EJERCICIO:([a-zA-Z0-9_-]+)\]\]\s*<\/p>/gi, (_, exerciseId) => {
     const ex = EXERCISES[exerciseId];
 
     if (!ex) {
       return `<p><strong>Ejercicio no encontrado:</strong> ${escapeHtml(exerciseId)}</p>`;
     }
 
+    const titulo = ex.titulo || "Ejercicio";
+    const introduccion = ex.introduccion || "";
+    const codigo = ex.codigo || "";
+
     return `
       <div class="exercise-card" data-exercise-id="${escapeHtml(exerciseId)}">
         <div class="exercise-card-header">
-          <h3>Ejercicio</h3>
+          <h3>${escapeHtml(titulo)}</h3>
         </div>
+
         <div class="exercise-card-body">
+          ${introduccion ? `<p class="exercise-intro">${escapeHtml(introduccion)}</p>` : ""}
+          ${codigo ? `<pre class="exercise-code"><code>${escapeHtml(codigo)}</code></pre>` : ""}
           <p class="exercise-question">${escapeHtml(ex.pregunta)}</p>
-          <input type="text" class="exercise-input" placeholder="${escapeHtml(ex.placeholder)}">
-          <button class="exercise-btn" data-exercise-id="${escapeHtml(exerciseId)}" type="button">Enviar respuesta</button>
+
+          <input
+            type="text"
+            class="exercise-input"
+            placeholder="${escapeHtml(ex.placeholder)}"
+          >
+
+          <button
+            class="exercise-btn"
+            data-exercise-id="${escapeHtml(exerciseId)}"
+            type="button"
+          >
+            Enviar respuesta
+          </button>
+
           <p class="exercise-message"></p>
         </div>
       </div>
@@ -213,7 +260,7 @@ function checkExercise(exerciseId, box) {
 document.addEventListener("click", (e) => {
   if (e.target.classList.contains("exercise-btn")) {
     const exerciseId = e.target.dataset.exerciseId;
-    const box = e.target.closest(".exercise-box");
+    const box = e.target.closest(".exercise-card");
     checkExercise(exerciseId, box);
   }
 });
@@ -226,7 +273,7 @@ async function fetchWithBranchFallback(item) {
     if (res.ok) {
       BRANCH = candidate;
       const text = await res.text();
-      return { text, branch: candidate, rawUrl: raw };
+      return { text, branch: candidate };
     }
   }
 
