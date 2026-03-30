@@ -1,55 +1,120 @@
 {
   "repoUrl": "https://github.com/Gerardo462/Programaci-n-Estructurada",
   "sections": [
-
     {
       "title": "Inicio",
       "items": [
-        { "id": "bienvenida", "label": "Bienvenida", "mdPath": "extras/bienvenida.md" },
-        { "id": "creditos", "label": "Créditos", "mdPath": "extras/creditos.md" }
+        {
+          "id": "bienvenida",
+          "label": "Bienvenida",
+          "mdPath": "extras/bienvenida.md"
+        },
+        {
+          "id": "creditos",
+          "label": "Créditos",
+          "mdPath": "extras/creditos.md"
+        }
       ]
     },
-
+    {
+      "title": "Temas de programación",
+      "items": [
+        {
+          "id": "logica_matematica",
+          "label": "Lógica matemática",
+          "mdPath": "temas_programacion/03_logica_matematica/README.md"
+        },
+        {
+          "id": "sintaxis_c",
+          "label": "Sintaxis en C",
+          "mdPath": "temas_programacion/06_sintaxis_c/README.md"
+        },
+        {
+          "id": "tipos_datos",
+          "label": "Tipos de datos",
+          "mdPath": "temas_programacion/07_tipos_de_datos/README.md"
+        }
+      ]
+    },
     {
       "title": "Básico",
       "items": [
-        { "id": "variables", "label": "Variables", "mdPath": "01_basico/variables/variables.md" },
-        { "id": "condicionales", "label": "Condicionales", "mdPath": "01_basico/condicionales/condicionales.md" },
-        { "id": "ciclos", "label": "Ciclos", "mdPath": "01_basico/ciclos/ciclos.md" }
+        {
+          "id": "variables",
+          "label": "Variables",
+          "mdPath": "01_basico/variables/variables.md"
+        },
+        {
+          "id": "condicionales",
+          "label": "Condicionales",
+          "mdPath": "01_basico/condicionales/condicionales.md"
+        },
+        {
+          "id": "ciclos",
+          "label": "Ciclos",
+          "mdPath": "01_basico/ciclos/ciclos.md"
+        }
       ]
     },
-
     {
       "title": "Intermedio",
       "items": [
-        { "id": "funciones", "label": "Funciones", "mdPath": "02_intermedio/funciones/funciones.md" },
-        { "id": "arreglos", "label": "Arreglos", "mdPath": "02_intermedio/arreglos/arreglos.md" }
+        {
+          "id": "funciones",
+          "label": "Funciones",
+          "mdPath": "02_intermedio/funciones/funciones.md"
+        },
+        {
+          "id": "arreglos",
+          "label": "Arreglos",
+          "mdPath": "02_intermedio/arreglos/arreglos.md"
+        }
       ]
     },
-
     {
       "title": "Pseudocódigo",
       "items": [
-        { "id": "ps_variables", "label": "Variables", "mdPath": "04_pseudocodigo/variables_pseudocodigo.md" },
-        { "id": "ps_condicionales", "label": "Condicionales", "mdPath": "04_pseudocodigo/condicionales_pseudocodigo.md" },
-        { "id": "ps_ciclos", "label": "Ciclos", "mdPath": "04_pseudocodigo/ciclos_pseudocodigo.md" }
+        {
+          "id": "ps_variables",
+          "label": "Variables",
+          "mdPath": "04_pseudocodigo/variables_pseudocodigo.md"
+        },
+        {
+          "id": "ps_condicionales",
+          "label": "Condicionales",
+          "mdPath": "04_pseudocodigo/condicionales_pseudocodigo.md"
+        },
+        {
+          "id": "ps_ciclos",
+          "label": "Ciclos",
+          "mdPath": "04_pseudocodigo/ciclos_pseudocodigo.md"
+        }
       ]
     },
-
     {
       "title": "Diagramas de flujo",
       "items": [
-        { "id": "diagramas", "label": "Diagramas", "mdPath": "05_diagramas_flujo/README.md" }
+        {
+          "id": "diagramas",
+          "label": "Diagramas",
+          "mdPath": "05_diagramas_flujo/README.md"
+        }
       ]
     },
-
     {
       "title": "Recursos",
       "items": [
-        { "id": "instalacion", "label": "Guía de instalación", "mdPath": "recursos/guia_instalacion.md" },
-        { "id": "referencias", "label": "Referencias", "mdPath": "recursos/referencias.md" }
+        {
+          "id": "instalacion",
+          "label": "Guía de instalación",
+          "mdPath": "recursos/guia_instalacion.md"
+        },
+        {
+          "id": "referencias",
+          "label": "Referencias",
+          "mdPath": "recursos/referencias.md"
+        }
       ]
     }
-
   ]
 }
