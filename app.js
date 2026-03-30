@@ -312,6 +312,7 @@ pistas:[
 ],
 felicitacion:"🎉 ¡Excelente!"
 },
+
 arreglos_4:{
 titulo:"Ejercicio 4",
 introduccion:"Observa el siguiente código:",
@@ -330,64 +331,203 @@ felicitacion:"🎉 ¡Excelente! Entendiste cómo modificar valores dentro de un 
 },
 
 diagrama_guiado_1: {
-  titulo: "Crear un diagrama de flujo",
-  introduccion: "Ordena correctamente los pasos del algoritmo para construir un diagrama de flujo que lea un número, lo multiplique por 2 y muestre el resultado.",
-  codigo: `Pasos disponibles:
+titulo: "Crear un diagrama de flujo",
+introduccion: "Ordena correctamente los pasos del algoritmo para construir un diagrama de flujo que lea un número, lo multiplique por 2 y muestre el resultado.",
+codigo: `Pasos disponibles:
 1. Mostrar resultado
 2. INICIO
 3. resultado ← número * 2
 4. FIN
 5. Leer número`,
-  pregunta: "Escribe el orden correcto de los pasos separados por comas. Ejemplo: 2,5,3,1,4",
-  respuestaCorrecta: "2,5,3,1,4",
-  pistas: [
-    "El diagrama siempre comienza con INICIO.",
-    "Después del inicio va la entrada de datos.",
-    "Luego se realiza el proceso.",
-    "Después se muestra el resultado.",
-    "El último paso siempre es FIN."
-  ],
-  felicitacion: "¡Muy bien! Ordenaste correctamente el diagrama de flujo."
+pregunta: "Escribe el orden correcto de los pasos separados por comas. Ejemplo: 2,5,3,1,4",
+respuestaCorrecta: "2,5,3,1,4",
+placeholder:"Escribe tu respuesta",
+pistas: [
+"El diagrama siempre comienza con INICIO.",
+"Después del inicio va la entrada de datos.",
+"Luego se realiza el proceso.",
+"Después se muestra el resultado.",
+"El último paso siempre es FIN."
+],
+felicitacion: "¡Muy bien! Ordenaste correctamente el diagrama de flujo."
 },
 
 diagrama_guiado_2: {
-  titulo: "Identificar símbolos",
-  introduccion: "Relaciona cada acción del algoritmo con el símbolo correcto del diagrama de flujo.",
-  codigo: `Acciones del algoritmo:
+titulo: "Identificar símbolos",
+introduccion: "Relaciona cada acción del algoritmo con el símbolo correcto del diagrama de flujo.",
+codigo: `Acciones del algoritmo:
 - INICIO
 - Leer número
 - resultado ← número * 2
 - Mostrar resultado
 - FIN`,
-  pregunta: "¿Qué símbolo se usa para representar la acción 'resultado ← número * 2'?",
-  respuestaCorrecta: "rectángulo",
-  pistas: [
-    "Ese paso representa una operación.",
-    "Las operaciones dentro de un algoritmo son procesos.",
-    "El símbolo del proceso es un rectángulo."
-  ],
-  felicitacion: "¡Correcto! Esa acción se representa con un rectángulo."
+pregunta: "¿Qué símbolo se usa para representar la acción 'resultado ← número * 2'?",
+respuestaCorrecta: "rectángulo",
+placeholder:"Escribe tu respuesta",
+pistas: [
+"Ese paso representa una operación.",
+"Las operaciones dentro de un algoritmo son procesos.",
+"El símbolo del proceso es un rectángulo."
+],
+felicitacion: "¡Correcto! Esa acción se representa con un rectángulo."
 },
 
 diagrama_guiado_3: {
-  titulo: "Diagrama de flujo con decisión",
-  introduccion: "Identifica qué símbolo debe usarse cuando el algoritmo necesita evaluar una condición.",
-  codigo: `Problema:
+titulo: "Diagrama de flujo con decisión",
+introduccion: "Identifica qué símbolo debe usarse cuando el algoritmo necesita evaluar una condición.",
+codigo: `Problema:
 Leer un número.
 Si el número es mayor que 10, mostrar "Es mayor que 10".
 Si no, mostrar "Es menor o igual que 10".`,
-  pregunta: "¿Qué símbolo se utiliza para representar la condición '¿número > 10?' en un diagrama de flujo?",
-  respuestaCorrecta: "rombo",
-  pistas: [
-    "La condición divide el flujo en dos caminos.",
-    "Las decisiones no se representan con rectángulo.",
-    "El símbolo de decisión en diagramas de flujo es el rombo."
-  ],
-  felicitacion: "¡Excelente! Las decisiones se representan con un rombo."
+pregunta: "¿Qué símbolo se utiliza para representar la condición '¿número > 10?' en un diagrama de flujo?",
+respuestaCorrecta: "rombo",
+placeholder:"Escribe tu respuesta",
+pistas: [
+"La condición divide el flujo en dos caminos.",
+"Las decisiones no se representan con rectángulo.",
+"El símbolo de decisión en diagramas de flujo es el rombo."
+],
+felicitacion: "¡Excelente! Las decisiones se representan con un rombo."
+},
+
+logica_1:{
+titulo:"Ejercicio 1",
+introduccion:"Observa la siguiente condición:",
+codigo:`numero = 8
+
+numero > 0 and numero % 2 == 0`,
+pregunta:"¿El número cumple la condición?",
+placeholder:"Escribe si o no",
+respuestaCorrecta:"si",
+pistas:[
+"8 es mayor que 0.",
+"8 también es divisible entre 2."
+],
+felicitacion:"🎉 ¡Correcto!"
+},
+
+logica_2:{
+titulo:"Ejercicio 2",
+introduccion:"Observa la siguiente comparación:",
+codigo:`edad = 16
+
+edad >= 18`,
+pregunta:"¿Se cumple la condición?",
+placeholder:"Escribe si o no",
+respuestaCorrecta:"no",
+pistas:[
+"16 es menor que 18.",
+"Por eso la condición no se cumple."
+],
+felicitacion:"🎉 ¡Muy bien!"
+},
+
+logica_3:{
+titulo:"Ejercicio 3",
+introduccion:"Observa la expresión lógica:",
+codigo:`a = 5
+b = -2
+
+a > 0 and b > 0`,
+pregunta:"¿La expresión es verdadera o falsa?",
+placeholder:"Escribe verdadera o falsa",
+respuestaCorrecta:"falsa",
+pistas:[
+"a sí es mayor que 0.",
+"b no es mayor que 0."
+],
+felicitacion:"🎉 ¡Excelente!"
+},
+
+sintaxis_1:{
+titulo:"Ejercicio 1",
+introduccion:"Observa el siguiente código en C:",
+codigo:`printf("Hola mundo")`,
+pregunta:"¿Qué le falta a la instrucción para que esté correcta?",
+placeholder:"Escribe tu respuesta",
+respuestaCorrecta:"falta punto y coma",
+pistas:[
+"En C las instrucciones terminan con ;",
+"Fíjate al final de la línea."
+],
+felicitacion:"🎉 ¡Correcto!"
+},
+
+sintaxis_2:{
+titulo:"Ejercicio 2",
+introduccion:"Observa el siguiente código:",
+codigo:`int main( {
+    return 0;
+}`,
+pregunta:"¿Qué símbolo está mal escrito en la declaración de main?",
+placeholder:"Escribe tu respuesta",
+respuestaCorrecta:"parentesis",
+pistas:[
+"Después de main deben abrirse y cerrarse paréntesis.",
+"No debe ir solo un paréntesis."
+],
+felicitacion:"🎉 ¡Muy bien!"
+},
+
+sintaxis_3:{
+titulo:"Ejercicio 3",
+introduccion:"Observa el siguiente código:",
+codigo:`int edad = 18
+printf("Edad: %d", edad);`,
+pregunta:"¿Qué le falta a la primera línea?",
+placeholder:"Escribe tu respuesta",
+respuestaCorrecta:"falta punto y coma",
+pistas:[
+"La declaración de variable también termina con ;",
+"Revisa el final de la línea."
+],
+felicitacion:"🎉 ¡Excelente!"
+},
+
+tipos_1:{
+titulo:"Ejercicio 1",
+introduccion:"Observa la siguiente variable:",
+codigo:`int edad = 20;`,
+pregunta:"¿Qué tipo de dato es edad?",
+placeholder:"Escribe tu respuesta",
+respuestaCorrecta:"int",
+pistas:[
+"Guarda un número entero.",
+"En C los enteros usan int."
+],
+felicitacion:"🎉 ¡Correcto!"
+},
+
+tipos_2:{
+titulo:"Ejercicio 2",
+introduccion:"Observa la siguiente variable:",
+codigo:`float altura = 1.75;`,
+pregunta:"¿Qué tipo de dato se usa para guardar decimales aquí?",
+placeholder:"Escribe tu respuesta",
+respuestaCorrecta:"float",
+pistas:[
+"El valor tiene decimales.",
+"El tipo aparece al inicio de la línea."
+],
+felicitacion:"🎉 ¡Muy bien!"
+},
+
+tipos_3:{
+titulo:"Ejercicio 3",
+introduccion:"Observa la siguiente variable:",
+codigo:`char inicial = 'G';`,
+pregunta:"¿Qué tipo de dato se usa para guardar una sola letra?",
+placeholder:"Escribe tu respuesta",
+respuestaCorrecta:"char",
+pistas:[
+"Se usa para un solo carácter.",
+"La letra está entre comillas simples."
+],
+felicitacion:"🎉 ¡Excelente!"
 }
     
 };
- 
+
 const exerciseAttempts = {};
 
 if (window.marked) {
@@ -485,7 +625,7 @@ function renderExercises(html) {
           <input
             type="text"
             class="exercise-input"
-            placeholder="${escapeHtml(ex.placeholder)}"
+            placeholder="${escapeHtml(ex.placeholder || "Escribe tu respuesta")}"
           >
 
           <button
