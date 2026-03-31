@@ -72,6 +72,26 @@
       ]
     },
     {
+      "title": "Pseudocódigo",
+      "items": [
+        {
+          "id": "ps_variables",
+          "label": "Variables",
+          "mdPath": "04_pseudocodigo/variables_pseudocodigo.md"
+        },
+        {
+          "id": "ps_condicionales",
+          "label": "Condicionales",
+          "mdPath": "04_pseudocodigo/condicionales_pseudocodigo.md"
+        },
+        {
+          "id": "ps_ciclos",
+          "label": "Ciclos",
+          "mdPath": "04_pseudocodigo/ciclos_pseudocodigo.md"
+        }
+      ]
+    },
+    {
       "title": "Diagramas de flujo",
       "items": [
         {
@@ -88,6 +108,9 @@
           "id": "instalacion",
           "label": "Guía de instalación",
           "mdPath": "recursos/guia_instalacion.md"
+        },
+        {
+      
         }
       ]
     }
