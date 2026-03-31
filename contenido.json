@@ -25,29 +25,14 @@
           "mdPath": "temas_programacion/03_logica_matematica/README.md"
         },
         {
-          "id": "ej_logica",
-          "label": "Ejercicios",
-          "mdPath": "temas_programacion/03_logica_matematica/ejercicios.md"
-        },
-        {
           "id": "sintaxis_c",
           "label": "Sintaxis en C",
           "mdPath": "temas_programacion/06_sintaxis_c/README.md"
         },
         {
-          "id": "ej_sintaxis",
-          "label": "Ejercicios",
-          "mdPath": "temas_programacion/06_sintaxis_c/ejercicios.md"
-        },
-        {
           "id": "tipos_datos",
           "label": "Tipos de datos",
           "mdPath": "temas_programacion/07_tipos_de_datos/README.md"
-        },
-        {
-          "id": "ej_tipos",
-          "label": "Ejercicios",
-          "mdPath": "temas_programacion/07_tipos_de_datos/ejercicios.md"
         }
       ]
     },
