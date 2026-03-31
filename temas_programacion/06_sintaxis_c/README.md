@@ -1,14 +1,14 @@
-# 📌 Sintaxis del lenguaje C
+#  Sintaxis del lenguaje C
 
 La sintaxis es el conjunto de reglas para escribir correctamente un programa.
 
-## 🧠 Reglas básicas
+##  Reglas básicas
 - Cada instrucción termina con ;
 - Se usan {} para bloques
 - main() es la función principal
 - #include permite usar librerías
 
-## 💻 Ejemplo correcto
+##  Ejemplo correcto
 ```c
 #include <stdio.h>
 
@@ -18,7 +18,7 @@ int main() {
 }
 ```
 
-## ❌ Ejemplo incorrecto
+##  Ejemplo incorrecto
 ```c
 #include <stdio.h>
 
@@ -29,4 +29,9 @@ int main() {
 ```
 
 ## 🧪 Ejercicio
-Corregir errores de sintaxis en un programa.
+
+[[EJERCICIO:sintaxis_1]]
+
+[[EJERCICIO:sintaxis_2]]
+
+[[EJERCICIO:sintaxis_3]]
