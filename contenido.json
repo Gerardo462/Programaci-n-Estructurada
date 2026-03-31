@@ -89,11 +89,6 @@
           "label": "Guía de instalación",
           "mdPath": "recursos/guia_instalacion.md"
         },
-        {
-          "id": "referencias",
-          "label": "Referencias",
-          "mdPath": "recursos/referencias.md"
-        }
       ]
     }
   ]
