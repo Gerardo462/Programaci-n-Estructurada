@@ -1,8 +1,8 @@
-# 📌 Lógica Matemática
+# Lógica Matemática
 
 La lógica matemática es la base de la programación. Permite tomar decisiones mediante condiciones verdaderas o falsas.
 
-## 🧠 Proposiciones
+## Proposiciones
 Una proposición es una afirmación que puede ser:
 - Verdadera (V)
 - Falsa (F)
@@ -11,12 +11,12 @@ Ejemplos:
 - 5 > 3 → Verdadero  
 - 10 < 2 → Falso  
 
-## 🔗 Operadores lógicos
+##  Operadores lógicos
 - AND (&&): ambas condiciones deben cumplirse  
 - OR (||): al menos una condición debe cumplirse  
 - NOT (!): niega una condición  
 
-## 💻 Ejemplo en C
+##  Ejemplo en C
 ```c
 #include <stdio.h>
 
@@ -31,5 +31,10 @@ int main() {
 }
 ```
 
-## 🧪 Ejercicio
-Crear un programa que determine si un número es positivo y par.
+## 🧪 Ejercicios
+
+[[EJERCICIO:logica_1]]
+
+[[EJERCICIO:logica_2]]
+
+[[EJERCICIO:logica_3]]
