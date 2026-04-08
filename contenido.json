@@ -71,7 +71,6 @@
         }
       ]
     },
-    
     {
       "title": "Diagramas de flujo",
       "items": [
@@ -89,7 +88,7 @@
           "id": "instalacion",
           "label": "Guía de instalación",
           "mdPath": "recursos/guia_instalacion.md"
-        },
+        }
       ]
     }
   ]
